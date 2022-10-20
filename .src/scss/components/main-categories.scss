@@ -1,0 +1,17 @@
+.main-categories{
+  list-style: none;
+  padding-inline-start: 0;
+  margin: 0;
+  li{
+    margin-bottom: 17px;
+    a{
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      font-size: rem(15);
+      svg{
+        margin-right: 10px;
+      }
+    }
+  }
+}

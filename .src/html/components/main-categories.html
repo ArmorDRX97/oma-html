@@ -1,0 +1,11 @@
+<ul class="main-categories">
+    {% for category in data.mainCategories %}
+    <li>
+        <a href="/catalog.html">
+            <svg class="icon sz-20">
+                <use xlink:href="img/sprite/sprite.svg#{{category.icon}}"></use>
+            </svg>
+            {{category.title}}</a>
+    </li>
+    {% endfor %}
+</ul>

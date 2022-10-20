@@ -1,0 +1,112 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12 col-xl-2 col-lg-3 col-md-4 root-col-2 hide-768">
+        {% include 'components/main-categories.html' %}
+        <a href="#!" class="rek">
+            <img src="img/fake-photos/ads.png" alt="ads" title="тест рекламы">
+        </a>
+        <div class="side-latest">
+            <a href="/catalog.html" class="item">Кондиционеры</a>
+            <a href="/catalog.html" class="item">Ноутбуки</a>
+            <a href="/catalog.html" class="item">Смартфоны</a>
+            <a href="/catalog.html" class="item">Пылесосы</a>
+            <a href="/catalog.html" class="item">Стиральные машины</a>
+            <a href="/catalog.html" class="item">Микроволновые печи</a>
+            <a href="/catalog.html" class="item">Блендеры</a>
+        </div>
+    </div>
+    <div class="col-12 col-xl-10 col-lg-9 col-md-8 root-col-10">
+        <section class="banner">
+            {% include 'components/sliders/banner-swiper.html' %}
+        </section>
+
+        <section class="section goods-slider">
+            <h4 class="global-title mb-25">
+                Рекомендуем вам
+            </h4>
+            {% include 'components/sliders/recommended-swiper.html' %}
+        </section>
+
+        <section class="section goods-slider">
+            <h4 class="global-title mb-25">
+                Новинки
+            </h4>
+            {% include 'components/sliders/new-swiper.html' %}
+        </section>
+    </div>
+</div>
+
+<section class="section mini-banner">
+    {% include 'components/sliders/mini-banner-swiper.html' %}
+</section>
+
+<section class="section popular-categories pt-70">
+    <h4 class="global-title mb-25">
+        Популярные категории
+    </h4>
+    {% include 'components/sliders/popular-categories-swiper.html' %}
+</section>
+
+<section class="section pt-70">
+    <h4 class="global-title mb-25">
+        Новинки, актуальные предложения
+    </h4>
+    {% include 'components/sliders/actual-swiper.html' %}
+</section>
+
+<section class="section pt-70 brands">
+    <h4 class="global-title mb-25">
+        Популярные бренды
+    </h4>
+    {% include 'components/brand-cards.html' %}
+</section>
+
+<section class="section pt-100">
+    <div class="row">
+        <div class="col-12 col-lg-5">
+           <div class="row">
+               <div class="col-12 col-md-6 mb-4 mb-lg-0">
+                   <div class="info-card">
+                       <i class="icon icon-ruble"></i>
+                       Бонусные рубли <br>
+                       за покупки
+                   </div>
+               </div>
+               <div class="col-12 col-md-6 mb-4 mb-lg-0">
+                   <div class="info-card">
+                       <i class="icon icon-stick-star"></i>
+                       Выгодные <br>
+                       цены
+                   </div>
+               </div>
+           </div>
+
+        </div>
+        <div class="col-12 col-lg-7">
+           <div class="row">
+               <div class="col-12 col-md-6 mb-4 mb-lg-0">
+                   <div class="info-card">
+                       <i class="icon icon-box"></i>
+                       Товары разных продавцов <br>
+                       одной доставкой
+                   </div>
+               </div>
+               <div class="col-12 col-md-6 mb-4 mb-lg-0">
+                   <div class="info-card">
+                       <i class="icon icon-house"></i>
+                       Более 1 000 проверенных <br>
+                       продавцов
+                   </div>
+               </div>
+           </div>
+        </div>
+    </div>
+</section>
+
+<section class="section pt-70">
+    {% include 'components/email-subscribe.html' %}
+</section>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+<div class="filters-container">
+    <div class="filter categories">
+        <div class="title">Категория</div>
+        <div class="filter-list">
+            <a href="#!"><i class="icon icon-chevron-left"></i>Все категории</a>
+            <a href="#!"><i class="icon icon-chevron-left"></i>Умные часы</a>
+            <a href="#!"><i class="icon icon-chevron-left"></i>Умные часы и браслеты</a>
+        </div>
+    </div>
+
+    {% for filter in data.filters %}
+    <div class="filter">
+        {% if filter.title %}
+        <div class="title">
+            {{filter.title}}
+            {% if filter.showCount %}
+            <span>{{filter.list.length}}</span>
+            {% endif %}
+        </div>
+        {% endif %}
+        {% if filter.searchable %}
+        <div class="form-group search mb-25">
+            <input type="text" id="search-{{filter.title}}" class="form-control" placeholder="Поиск значения">
+        </div>
+        {% endif %}
+        <div class="filter-list">
+            {% for item in filter.list %}
+            <div class="form-group">
+                <input type="checkbox" id="{{filter.title + item}}" name="{{filter.title + item}}" class="form-check">
+                <label for="{{filter.title + item}}">{{item}}</label>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+
+</div>

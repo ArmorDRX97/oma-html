@@ -1,0 +1,231 @@
+[
+  {
+    "isNew": true,
+    "title": "Стиральная машина Midea MFN60-S1003",
+    "like": false,
+    "img": "image-85.png",
+    "rating": 4.9,
+    "reviews": 199,
+    "price": 119990
+  },
+  {
+    "isNew": true,
+    "title": "Робот-пылесос Xiaomi Lydsto S1 LDS",
+    "like": false,
+    "img": "image-85-1.png",
+    "rating": 4.4,
+    "reviews": 45,
+    "price": 299990,
+    "oldPrice": 329990
+  },
+  {
+    "isNew": true,
+    "title": "Беззеркальный фотоаппарат Canon EOS R6 RF 24-105 f/4-7.1 IS STM",
+    "like": false,
+    "img": "image-85-2.png",
+    "rating": 5.0,
+    "reviews": 766,
+    "price": 1499000
+  },
+  {
+    "isNew": true,
+    "title": "Мешковой пылесос Vitek VT-1898",
+    "like": false,
+    "img": "image-85-3.png",
+    "rating": 4.0,
+    "reviews": 12,
+    "price": 45990,
+    "oldPrice": 56890
+  },
+  {
+    "title": "Смартфон Xiaomi Redmi Note 10S 6+128GB Gray",
+    "like": true,
+    "img": "image-85-4.png",
+    "rating": 4.3,
+    "reviews": 233,
+    "price": 19999,
+    "oldPrice": 29990
+  },
+  {
+    "title": "Смартфон Apple iPhone 11 128GB с новой комплектацией Black (MHDH3RU/A)",
+    "like": false,
+    "img": "image-85-5.png",
+    "rating": 4.8,
+    "reviews": 22,
+    "price": 54890,
+    "discount": -19
+  },
+  {
+    "title": "Сушилка для овощей и фруктов MARTA MT-1947 red",
+    "like": false,
+    "img": "image-85-6.png",
+    "rating": 4.4,
+    "reviews": 99,
+    "price": 15690,
+    "oldPrice": 25670,
+    "discount": -5
+  },
+  {
+    "title": "Телевизор TCL 43 43P725 LED UHD Android Black",
+    "like": false,
+    "img": "image-85-7.png",
+    "rating": 3.2,
+    "reviews": 112,
+    "price": 159890,
+    "oldPrice": 189990,
+    "discount": -23
+  },
+  {
+    "title": "Смарт-часы SmartWatch X7 PRO 45мм",
+    "like": false,
+    "img": "image-85-8.png",
+    "rating": 3.9,
+    "reviews": 54,
+    "price": 67454,
+    "oldPrice": 78999
+  },
+  {
+    "title": "Смарт-часы SmartWatch X7 PRO 45мм",
+    "like": false,
+    "img": "image-85-9.png",
+    "rating": 4.5,
+    "reviews": 33,
+    "price": 56990,
+    "oldPrice": 78900,
+    "discount": -18
+  },
+  {
+    "title": "Смарт браслет Xiaomi Mi Band 6, Black",
+    "like": false,
+    "img": "image-85-10.png",
+    "rating": 4.3,
+    "reviews": 55,
+    "price": 45990,
+    "oldPrice": 56990,
+    "discount": -10
+  },
+  {
+    "title": "Смарт часы Samsung Galaxy Watch4 Classic 46mm",
+    "like": false,
+    "img": "image-85-11.png",
+    "rating": 4.3,
+    "reviews": 55,
+    "price": 78990,
+    "isNew": true
+  },
+  {
+    "title": "Смарт часы Apple Watch Series 7 GPS, 41mm",
+    "like": false,
+    "img": "image-85-12.png",
+    "rating": 2.3,
+    "reviews": 44,
+    "price": 15990,
+    "isNew": true
+  },
+  {
+    "title": "Смарт часы Samsung Galaxy Watch4 Aluminium 44mm",
+    "like": false,
+    "img": "image-85-13.png",
+    "rating": 0,
+    "reviews": 0,
+    "price": 56990,
+    "isNew": true
+  },
+  {
+    "title": "Смарт часы Apple Watch SE GPS, 44mm Gold",
+    "like": false,
+    "img": "image-85-14.png",
+    "rating": 3.4,
+    "reviews": 2,
+    "price": 199990,
+    "oldPrice": 299000,
+    "discount": -32
+  },
+  {
+    "title": "Смарт часы Samsung Galaxy Watch4 Aluminium 40mm",
+    "like": false,
+    "img": "image-85-15.png",
+    "rating": 4.4,
+    "reviews": 999,
+    "price": 1999999,
+    "oldPrice": 2999999,
+    "discount": -40
+  },
+  {
+    "title": "Смарт часы HUAWEI Watch GT3 (46mm), Black",
+    "like": false,
+    "img": "image-85-16.png",
+    "rating": 3.4,
+    "reviews": 56,
+    "price": 56990,
+    "oldPrice": 66990,
+    "discount": -12,
+    "isNew": true
+  },
+  {
+    "title": "Смарт-часы SmartWatch X7 PRO 45мм",
+    "like": false,
+    "img": "image-85-17.png",
+    "rating": 4.4,
+    "reviews": 56,
+    "price": 56990,
+    "oldPrice": 66990,
+    "discount": -12,
+    "isNew": true
+  },
+  {
+    "title": "Смарт-часы SmartWatch X7 PRO 45мм",
+    "like": false,
+    "img": "image-85-18.png",
+    "rating": 3.9,
+    "reviews": 54,
+    "price": 67454,
+    "oldPrice": 78999
+  },
+  {
+    "title": "Смарт-часы SmartWatch X7 PRO 45мм",
+    "like": false,
+    "img": "image-85-19.png",
+    "rating": 4.5,
+    "reviews": 33,
+    "price": 56990,
+    "oldPrice": 78900,
+    "discount": -18
+  },
+  {
+    "title": "Смарт браслет Xiaomi Mi Band 6, Black",
+    "like": false,
+    "img": "image-85-20.png",
+    "rating": 4.3,
+    "reviews": 55,
+    "price": 45990,
+    "oldPrice": 56990,
+    "discount": -10
+  },
+  {
+    "title": "Смарт часы Samsung Galaxy Watch4 Classic 46mm",
+    "like": false,
+    "img": "image-85-21.png",
+    "rating": 4.3,
+    "reviews": 55,
+    "price": 78990,
+    "isNew": true
+  },
+  {
+    "title": "Смарт часы Apple Watch Series 7 GPS, 41mm",
+    "like": false,
+    "img": "image-85-22.png",
+    "rating": 2.3,
+    "reviews": 44,
+    "price": 15990,
+    "isNew": true
+  },
+  {
+    "title": "Смарт браслет Xiaomi \nMi Band 6, Black",
+    "like": false,
+    "img": "image-85-23.png",
+    "rating": 4.3,
+    "reviews": 777,
+    "price": 768990
+  }
+]

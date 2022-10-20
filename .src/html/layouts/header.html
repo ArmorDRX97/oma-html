@@ -1,0 +1,35 @@
+<div class="navbar">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-xl-2 col-lg-3 col-md-4 root-col-2">
+                <a href="/"><img src="img/logo.svg" alt="logo" title="logo" class="logo"></a>
+            </div>
+            <div class="col-12 col-xl-10 col-lg-9 col-md-8 root-col-10">
+                <div class="nav-content">
+                    <div id="menu-toggle">
+                        <input type="checkbox" id="menu-checkbox"/>
+                       <div class="burger">
+                           <span></span>
+                           <span></span>
+                           <span></span>
+                       </div>
+                        <div class="catalog">
+                            {% include 'components/menu-catalog.html' %}
+                        </div>
+                    </div>
+                    <form>
+                        <div class="search-form">
+                            <input type="text" placeholder="Искать товары" class="search">
+                            <button type="submit" class="search-action"><i class="icon icon-magnifying-glass"></i></button>
+                        </div>
+                    </form>
+                    <div class="actions">
+                        <a href="#!" class="action-item"><i class="icon icon-profile"></i></a>
+                        <a href="#!" class="action-item"><i class="icon icon-like"></i></a>
+                        <a href="#!" class="action-item"><i class="icon icon-cart2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

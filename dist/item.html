@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>OMA.KZ что-то там слоган</title>
+</head>
+
+<body>
+    <div class="pre-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-xl-2 col-lg-3 col-md-4 root-col-2 hide-480">
+                    <a href="#!" class="btn-rainbow">Хочу продавать</a>
+                </div>
+                <div class="col-12 col-xl-10 col-lg-9 col-md-8 root-col-10">
+                    <div class="pre-nav-content">
+                        <ul class="pre-nav hide-1280">
+                            <li class="pre-nav-item"><a href="#!">О компании</a></li>
+                            <li class="pre-nav-item"><a href="#!">Доставка и оплата</a></li>
+                            <li class="pre-nav-item"><a href="#!">Гарантия и возврат</a></li>
+                            <li class="pre-nav-item"><a href="#!">Вопросы и ответы</a></li>
+                        </ul>
+                        <div class="right-nav">
+                            <div class="location">
+                                <span class="dropdown"><i class="icon icon-location"></i> Астана <i class="icon icon-chevron-down"></i></span>
+                                <div class="dropdown-content">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <ul>
+                                                <li><a href="#!">Алматы</a></li>
+                                                <li><a href="#!">Усть-Каменагорск</a></li>
+                                                <li><a href="#!">Шымкент</a></li>
+                                                <li><a href="#!">Караганда</a></li>
+                                                <li><a href="#!">Актау</a></li>
+                                                <li><a href="#!">Атырау</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <ul>
+                                                <li><a href="#!">Тараз</a></li>
+                                                <li><a href="#!">Туркестан</a></li>
+                                                <li><a href="#!">Костанай</a></li>
+                                                <li><a href="#!">Петропавловск</a></li>
+                                                <li><a href="#!">Атырау</a></li>
+                                                <li><a href="#!">Павлодар</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dark-theme-switch">
+                                <input type="checkbox" hidden="hidden" id="dark-theme">
+                                <label class="switch" for="dark-theme"></label>
+                                <span>Ночной режим</span>
+                            </div>
+                            <div class="lang">
+                                <span class="dropdown"><img src="img/langs/ru.png" alt="lang"> RU <i class="icon icon-chevron-down"></i></span>
+                                <div class="dropdown-content">
+                                    <ul>
+                                        <li><a><img src="img/langs/ru.png" alt="lang"> EN</a></li>
+                                        <li><a><img src="img/langs/ru.png" alt="lang"> KZ</a></li>
+                                        <li><a><img src="img/langs/ru.png" alt="lang"> UK</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-xl-2 col-lg-3 col-md-4 root-col-2">
+                    <a href="/"><img src="img/logo.svg" alt="logo" title="logo" class="logo"></a>
+                </div>
+                <div class="col-12 col-xl-10 col-lg-9 col-md-8 root-col-10">
+                    <div class="nav-content">
+                        <div id="menu-toggle">
+                            <input type="checkbox" id="menu-checkbox" />
+                            <div class="burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="catalog">
+                                <img src="img/fake-photos/lore7.jpg" alt="ads" title="текст рекламы" class="overflow-hidden br-8 img-fluid">
+                                <div class="row big-list">
+                                    <div class="col-12 col-md-3 level-container" id="first-level-block">
+                                        <p class="catalog-title">Каталог</p>
+                                        <ul class="first-level">
+                                            <li><a href="/catalog.html" id="cat1">Главная категория 1<i class="icon icon-chevron-right"></i></a></li>
+                                            <li><a href="/catalog.html" id="cat2">Главная категория 2<i class="icon icon-chevron-right"></i></a></li>
+                                            <li><a href="/catalog.html" id="cat3">Главная категория 3<i class="icon icon-chevron-right"></i></a></li>
+                                            <li><a href="/catalog.html" id="cat4">Главная категория 4<i class="icon icon-chevron-right"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-4 level-container" id="second-level-block">
+                                        <div class="second-level" parent-id="cat1">
+                                            <p class="catalog-title">Главная категория 1</p>
+                                            <ul>
+                                                <li><a href="/catalog.html" id="cat1_1">подкатегория 1-1<i class="icon icon-chevron-right"></i></a></li>
+                                                <li><a href="/catalog.html" id="cat1_2">подкатегория 1-2<i class="icon icon-chevron-right"></i></a></li>
+                                                <li><a href="/catalog.html" id="cat1_3">подкатегория 1-3<i class="icon icon-chevron-right"></i></a></li>
+                                                <li><a href="/catalog.html" id="cat1_4">Садовая техника<i class="icon icon-chevron-right"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="second-level" parent-id="cat2">
+                                            <p class="catalog-title">Главная категория 2</p>
+                                            <ul>
+                                                <li><a href="/catalog.html" id="cat2_1">подкатегория 2-1<i class="icon icon-chevron-right"></i></a></li>
+                                                <li><a href="/catalog.html" id="cat2_2">подкатегория 2-2<i class="icon icon-chevron-right"></i></a></li>
+                                                <li><a href="/catalog.html" id="cat2_3">подкатегория 2-3<i class="icon icon-chevron-right"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="second-level" parent-id="cat3">
+                                            <p class="catalog-title">Главная категория 3</p>
+                                            <ul>
+                                                <li><a href="/catalog.html" id="cat3_1">подкатегория 3-1<i class="icon icon-chevron-right"></i></a></li>
+                                                <li><a href="/catalog.html" id="cat3_2">подкатегория 3-2<i class="icon icon-chevron-right"></i></a></li>
+                                                <li><a href="/catalog.html" id="cat3_3">подкатегория 3-3<i class="icon icon-chevron-right"></i></a></li>
+                                                <li><a href="/catalog.html" id="cat3_4">подкатегория 3-4<i class="icon icon-chevron-right"></i></a></li>
+                                                <li><a href="/catalog.html" id="cat3_5">подкатегория 3-5<i class="icon icon-chevron-right"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="second-level" parent-id="cat4">
+                                            <p class="catalog-title">Главная категория 4</p>
+                                            <ul>
+                                                <li><a href="/catalog.html" id="cat4_1">подкатегория 4-1<i class="icon icon-chevron-right"></i></a></li>
+                                                <li><a href="/catalog.html" id="cat4_2">подкатегория 4-2<i class="icon icon-chevron-right"></i></a></li>
+                                                <li><a href="/catalog.html" id="cat4_3">подкатегория 4-3<i class="icon icon-chevron-right"></i></a></li>
+                                                <li><a href="/catalog.html" id="cat4_4">подкатегория 4-4<i class="icon icon-chevron-right"></i></a></li>
+                                                <li><a href="/catalog.html" id="cat4_5">подкатегория 4-5<i class="icon icon-chevron-right"></i></a></li>
+                                                <li><a href="/catalog.html" id="cat4_6">подкатегория 4-6<i class="icon icon-chevron-right"></i></a></li>
+                                                <li><a href="/catalog.html" id="cat4_7">подкатегория 4-7<i class="icon icon-chevron-right"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5 level-container" id="third-level-block">
+                                        <div class="third-level" parent-id="cat1_1">
+                                            <p class="catalog-title">подкатегория 1-1</p>
+                                            <ul>
+                                                <li><a href="/catalog.html">конечная категория 1-1-1 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 1-1-2 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 1-1-3 (18)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="third-level" parent-id="cat1_2">
+                                            <p class="catalog-title">подкатегория 1-2</p>
+                                            <ul>
+                                                <li><a href="/catalog.html">конечная категория 1-2-1 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 1-2-2 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 1-2-3 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 1-2-4 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 1-2-5 (18)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="third-level" parent-id="cat1_3">
+                                            <p class="catalog-title">подкатегория 1-3</p>
+                                            <ul>
+                                                <li><a href="/catalog.html">конечная категория 1-3-1 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 1-3-2 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 1-3-3 (18)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="third-level" parent-id="cat1_4">
+                                            <p class="catalog-title">Садовая техника</p>
+                                            <ul>
+                                                <li><a href="/catalog.html">Водяные насосы (18)</a></li>
+                                                <li><a href="/catalog.html">Воздуходувки (421)</a></li>
+                                                <li><a href="/catalog.html">Триммеры для газона (999)</a></li>
+                                                <li><a href="/catalog.html">Газонокосилки (322)</a></li>
+                                                <li><a href="/catalog.html">Дровоколы (5)</a></li>
+                                                <li><a href="/catalog.html">Измельчители садового мусора (76)</a></li>
+                                                <li><a href="/catalog.html">Культиваторы (21)</a></li>
+                                                <li><a href="/catalog.html">Кусторезы (13)</a></li>
+                                                <li><a href="/catalog.html">Лески и ножи для триммера (19)</a></li>
+                                                <li><a href="/catalog.html">Снегоуборочные машины (56)</a></li>
+                                                <li><a href="/catalog.html">Мотоблоки (57)</a></li>
+                                                <li><a href="/catalog.html">Мотопомпы (46)</a></li>
+                                                <li><a href="/catalog.html">Садовые опрыскиватели (31)</a></li>
+                                                <li><a href="/catalog.html">Шланги для полива (467)</a></li>
+                                                <li><a href="/catalog.html">Садовые пылесосы (1)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="third-level" parent-id="cat2_1">
+                                            <p class="catalog-title">подкатегория 2-1</p>
+                                            <ul>
+                                                <li><a href="/catalog.html">конечная категория 2-1-1 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 2-1-2 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 2-1-3 (18)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="third-level" parent-id="cat2_2">
+                                            <p class="catalog-title">подкатегория 2-2</p>
+                                            <ul>
+                                                <li><a href="/catalog.html">конечная категория 2-2-1 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 2-2-2 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 2-2-3 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 2-2-4 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 2-2-5 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 2-2-6 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 2-2-7 (18)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="third-level" parent-id="cat2_3">
+                                            <p class="catalog-title">подкатегория 2-3</p>
+                                            <ul>
+                                                <li><a href="/catalog.html">конечная категория 2-3-1 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 2-3-2 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 2-3-3 (18)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="third-level" parent-id="cat3_1">
+                                            <p class="catalog-title">подкатегория 3-1</p>
+                                            <ul>
+                                                <li><a href="/catalog.html">конечная категория 3-1-1 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 3-1-2 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 3-1-3 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 3-1-4 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 3-1-5 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 3-1-6 (18)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="third-level" parent-id="cat3_2">
+                                            <p class="catalog-title">подкатегория 3-2</p>
+                                            <ul>
+                                                <li><a href="/catalog.html">конечная категория 3-2-1 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 3-2-2 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 3-2-3 (18)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="third-level" parent-id="cat3_3">
+                                            <p class="catalog-title">подкатегория 3-3</p>
+                                            <ul>
+                                                <li><a href="/catalog.html">конечная категория 3-3-1 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 3-3-2 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 3-3-3 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 3-3-4 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 3-3-5 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 3-3-6 (18)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="third-level" parent-id="cat3_4">
+                                            <p class="catalog-title">подкатегория 3-4</p>
+                                            <ul>
+                                                <li><a href="/catalog.html">конечная категория 3-4-1 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 3-4-2 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 3-4-3 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 3-4-4 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 3-4-5 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 3-4-6 (18)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="third-level" parent-id="cat3_5">
+                                            <p class="catalog-title">подкатегория 3-5</p>
+                                            <ul>
+                                                <li><a href="/catalog.html">конечная категория 3-5-1 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 3-5-2 (18)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="third-level" parent-id="cat4_1">
+                                            <p class="catalog-title">подкатегория 4-1</p>
+                                            <ul>
+                                                <li><a href="/catalog.html">конечная категория 4-1-1 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-1-2 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-1-3 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-1-4 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-1-5 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-1-6 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-1-7 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-1-8 (18)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="third-level" parent-id="cat4_2">
+                                            <p class="catalog-title">подкатегория 4-2</p>
+                                            <ul>
+                                                <li><a href="/catalog.html">конечная категория 4-2-1 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-2-2 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-2-3 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-2-4 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-2-5 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-2-6 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-2-7 (18)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="third-level" parent-id="cat4_3">
+                                            <p class="catalog-title">подкатегория 4-3</p>
+                                            <ul>
+                                                <li><a href="/catalog.html">конечная категория 4-3-1 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-3-2 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-3-3 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-3-4 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-3-5 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-3-6 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-3-7 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-3-8 (18)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="third-level" parent-id="cat4_4">
+                                            <p class="catalog-title">подкатегория 4-4</p>
+                                            <ul>
+                                                <li><a href="/catalog.html">конечная категория 4-4-1 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-4-2 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-4-3 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-4-4 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-4-5 (18)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="third-level" parent-id="cat4_5">
+                                            <p class="catalog-title">подкатегория 4-5</p>
+                                            <ul>
+                                                <li><a href="/catalog.html">конечная категория 4-5-1 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-5-2 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-5-3 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-5-4 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-5-5 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-5-6 (18)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="third-level" parent-id="cat4_6">
+                                            <p class="catalog-title">подкатегория 4-6</p>
+                                            <ul>
+                                                <li><a href="/catalog.html">конечная категория 4-6-1 (18)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="third-level" parent-id="cat4_7">
+                                            <p class="catalog-title">подкатегория 4-7</p>
+                                            <ul>
+                                                <li><a href="/catalog.html">конечная категория 4-7-1 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-7-2 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-7-3 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-7-4 (18)</a></li>
+                                                <li><a href="/catalog.html">конечная категория 4-7-5 (18)</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="search-form">
+                                <input type="text" placeholder="Искать товары" class="search">
+                                <button type="submit" class="search-action"><i class="icon icon-magnifying-glass"></i></button>
+                            </div>
+                        </form>
+                        <div class="actions">
+                            <a href="#!" class="action-item"><i class="icon icon-profile"></i></a>
+                            <a href="#!" class="action-item"><i class="icon icon-like"></i></a>
+                            <a href="#!" class="action-item"><i class="icon icon-cart2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="container">
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-xl-2 col-lg-3 root-col-2">
+                    <img src="img/logo.svg" alt="logo" title="logo">
+                </div>
+                <div class="col-12 col-xl-10 col-lg-9 root-col-10">
+                    <div class="row">
+                        <div class="col-12 col-md-3">
+                            <p class="footer-title">Маркетплейс</p>
+                            <ul>
+                                <li><a href="#!">О компании</a></li>
+                                <li><a href="#!">Контакты</a></li>
+                                <li><a href="#!">Вакансии</a></li>
+                                <li><a href="#!">Реквизиты</a></li>
+                                <li><a href="#!">Партнерская программа</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <p class="footer-title">Покупателю</p>
+                            <ul>
+                                <li><a href="#!">Помощь покупателю</a></li>
+                                <li><a href="#!">Доставка</a></li>
+                                <li><a href="#!">Оплата</a></li>
+                                <li><a href="#!">Возврат</a></li>
+                                <li><a href="#!">Акции</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <p class="footer-title">Покупателю</p>
+                            <ul>
+                                <li><a href="#!">Публичная оферта</a></li>
+                                <li><a href="#!">Правила бонусной программы</a></li>
+                                <li><a href="#!">Политика конфиденциальности</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <a href="tel:88000804888" class="phone">8-800-08-04-888</a>
+                            <span class="working-mode">(c 08:00 до 22:00)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row copyright-block">
+                <div class="col-12 col-md-2 root-col-2">
+                    <span class="copyright">© 2022. Все права защищены.</span>
+                </div>
+                <div class="col-12 col-md-10 root-col-10">
+                    <span class="copyright">Указанная в интернет-магазине цена товаров и условия их приобретения действительны на текущую дату.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="backdrop" id="backdrop"></div>
+    <script src="js/script.js"></script>
+    <script>
+        // На главной, в теге <body> должен быть класс class="index". Он удаляет тень в меню (по дизайну тень есть везде, кроме главной)
+        // Это временное, демонстративное решение
+        if (document.URL === 'http://localhost:3000/' || document.URL === 'http://localhost:3000/#!') {
+            document.body.classList.add('index');
+        }
+    </script>
+</body>
+
+</html>

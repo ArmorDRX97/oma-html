@@ -1,0 +1,49 @@
+<div class="swiper-container">
+    <div class="swiper new-swiper">
+        <div class="swiper-wrapper">
+            {% for item in data.goods %}
+            {% if item.isNew %}
+            <div class="swiper-slide">
+                <div class="shop-card">
+                    <div class="card-image">
+                        <img src="img/fake-goods/{{item.img}}" alt="photo" title="{{item.title}}">
+                        <span class="new">новинки</span>
+                        <a href="#!" class="favorit">
+                            {% if item.like %}
+                            <i class="icon icon-like-active"></i>
+                            {% else %}
+                            <i class="icon icon-like"></i>
+                            {% endif %}
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="info-content">
+                            <a href="#!" class="title">{{item.title}}</a>
+                            <div class="stars-reviews">
+                                <span class="stars"><i class="icon icon-star"></i> {{item.rating}}</span>
+                                <span class="reviews"><i class="icon icon-chat"></i> {{item.reviews}} отзыва</span>
+                            </div>
+                        </div>
+                        <div class="price-content">
+                            {% if item.discount %}
+                            <span class="discount"><b>{{item.discount}}%</b></span>
+                            {% endif %}
+                            <p class="price">
+                                <span class="number">{{item.price}}</span>
+                                <span class="currency">₸</span>
+                                {% if item.oldPrice %}
+                                <span class="old-price">{{item.oldPrice}}</span>
+                                {% endif %}
+                            </p>
+                        </div>
+                        <a href="#!" class="btn btn-main"><i class="icon icon-cart"></i> В корзину</a>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="swiper-button-next new"></div>
+    <div class="swiper-button-prev new"></div>
+</div>

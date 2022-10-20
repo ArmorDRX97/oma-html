@@ -1,0 +1,44 @@
+<img src="img/fake-photos/lore7.jpg" alt="ads" title="текст рекламы" class="overflow-hidden br-8 img-fluid">
+
+<div class="row big-list">
+    <div class="col-12 col-md-3 level-container" id="first-level-block">
+        <p class="catalog-title">Каталог</p>
+        <ul class="first-level">
+            {% for item1 in data.catalog %}
+            <li><a href="/catalog.html" id="{{item1.id}}">{{item1.title}}<i
+                    class="icon icon-chevron-right"></i></a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="col-12 col-md-4 level-container" id="second-level-block">
+        {% for item1 in data.catalog %}
+        <div class="second-level" parent-id="{{item1.id}}">
+            <p class="catalog-title">{{item1.title}}</p>
+            <ul>
+                {% for item2 in item1.list %}
+                <li><a href="/catalog.html" id="{{item2.id}}">{{item2.title}}<i
+                        class="icon icon-chevron-right"></i></a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+
+
+    <div class="col-12 col-md-5 level-container" id="third-level-block">
+        {% for item1 in data.catalog %}
+        {% for item2 in item1.list %}
+        <div class="third-level" parent-id="{{item2.id}}">
+            <p class="catalog-title">{{item2.title}}</p>
+            <ul>
+                {% for item3 in item2.list %}
+                <li><a href="/catalog.html">{{item3.title}} ({{item3.count}})</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+        {% endfor %}
+    </div>
+
+</div>

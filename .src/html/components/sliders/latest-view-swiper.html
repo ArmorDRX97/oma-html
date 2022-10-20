@@ -1,0 +1,28 @@
+<div class="swiper-container latest-view">
+    <div class="swiper latest-view-swiper">
+        <div class="swiper-wrapper">
+            {% for item in data.goods %}
+            {% if item.isNew %}
+            <div class="swiper-slide">
+                <a href="#!" class="latest-view-card">
+                    <div class="card-image">
+                        <img src="img/fake-goods/{{item.img}}" alt="photo" title="{{item.title}}">
+                    </div>
+                    <div class="card-body">
+                        <p class="price">
+                            <span class="number">{{item.price}}</span>
+                            <span class="currency">₸</span>
+                        </p>
+                        <p class="title">{{item.title}}</p>
+                    </div>
+                </a>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="latest-view-buttons">
+        <div class="swiper-button-next latest-view"></div>
+        <div class="swiper-button-prev latest-view"></div>
+    </div>
+</div>

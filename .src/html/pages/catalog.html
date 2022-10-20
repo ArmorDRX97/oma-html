@@ -1,0 +1,112 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<div class="breadcrumbs mb-30">
+    <ul class="breadcrumbs-list">
+        <li><a href="#!" class="breadcrumb">Главная</a></li>
+        <li><a href="#!" class="breadcrumb">Электроника</a></li>
+        <li><a href="#!" class="breadcrumb">Умные часы и браслеты</a></li>
+        <li><a href="#!" class="breadcrumb">Смарт-часы</a></li>
+    </ul>
+</div>
+
+<h4 class="global-title big">Смарт-часы</h4>
+<p class="mb-20">444 товаров</p>
+
+<a href="#!" class="mini-banner-ads"><img src="img/fake-photos/lore9.jpg" alt="ads" title="текст рекламы"></a>
+
+<div class="row mt-50">
+    <div class="col-12 col-xl-2 col-lg-3 root-col-2">
+        {% include 'components/filters.html' %}
+    </div>
+    <div class="col-12 col-xl-10 col-lg-9 root-col-10">
+        <div class="catalog-sort mb-25">
+            <div class="row align-items-center">
+                <div class="col-3">
+                    <div class="form-group">
+                        <select class="form-control" id="select-sort">
+                            <option>Популярные</option>
+                            <option>Сначала новые</option>
+                            <option>По релевантности</option>
+                            <option>Сначала дорогие</option>
+                            <option>Сначала дешевые</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-3 offset-6 text-right">
+                    <span class="grid-view grid active"><i class="icon icon-grid"></i></span>
+                    <span class="grid-view list"><i class="icon icon-list"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="row catalog-list">
+            {% include 'components/catalog-list.html' %}
+        </div>
+        <button class="btn show-more">
+            <i class="icon icon-reload"></i> Показать еще
+        </button>
+
+        <div class="pagination">
+            <a href="#!" class="prev"><i class="icon icon-chevron-left"></i></a>
+            <a href="#!">1</a>
+            <a href="#!" class="current">2</a>
+            <a href="#!">3</a>
+            <span class="more">...</span>
+            <a href="#!">999</a>
+            <a href="#!" class="next"><i class="icon icon-chevron-right"></i></a>
+        </div>
+
+        <div class="desc-content mt-90">
+            <h2 class="medium">Смарт-часы – многофункциональный «умный» помощник</h2>
+            <br>
+            <p>Когда смарт-часы только появились в продаже, сразу вызвали большой ажиотаж среди покупателей. Но и цена
+                на технологическую новинку, соответственно, была высокой. Сейчас такие устройства выпускает практически
+                каждый производитель смартфонов, поэтому можно купить умные часы по оптимальной стоимости. В
+                интернет-магазинах на OMA.kz можно выбрать и приобрести с доставкой простые модели, а также более
+                продвинутые и высокотехнологичные.</p>
+            <br>
+            <h3 class="font-weight"> Разновидности устройств</h3>
+            <p> Smart Watch – настоящий «умный» помощник, который способен не только показывать время, но и
+                контролировать состояние здоровья владельца или стать полноценным устройством для связи. Основные
+                технические
+                характеристики, которые стоит учитывать при выборе:</p>
+            <ol>
+                <li>
+                    Операционная система. Большинство смарт-часов выпускают на базе Android, Windows Phone или iOS.
+                    Устройство и телефон, к которому его будут подключать, должны быть на одной ОС.
+                </li>
+                <li>
+                    Наличие слота для SIM-карты. Некоторые модели можно использовать не в связке с телефоном, а вместо
+                    него, просто установив СИМ-карту.
+                </li>
+                <li>
+                    Тип беспроводной связи. В каталоге есть модели с поддержкой Bluetooth, Wi-Fi, 2G, 3G, 4G. Также
+                    умные часы
+                    часто оснащают NFC-датчиками для бесконтактной оплаты.
+                </li>
+            </ol>
+            <br>
+            <p> Когда смарт-часы только появились в продаже, сразу вызвали большой ажиотаж среди покупателей. Но и цена
+                на
+                технологическую новинку, соответственно, была высокой. Сейчас такие устройства выпускает практически
+                каждый
+                производитель смартфонов, поэтому можно купить умные часы по оптимальной стоимости. В интернет-магазинах
+                на
+                OMA.kz можно выбрать и приобрести с доставкой простые модели, а также более продвинутые и
+                высокотехнологичные.</p>
+        </div>
+    </div>
+</div>
+
+<section class="section pt-120">
+    <h4 class="global-title latest-view-title mb-40">
+        Вы недавно смотрели
+    </h4>
+    {% include 'components/sliders/latest-view-swiper.html' %}
+</section>
+
+<section class="section pt-50">
+    {% include 'components/email-subscribe.html' %}
+</section>
+
+{% endblock %}

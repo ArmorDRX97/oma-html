@@ -1,0 +1,27 @@
+@import "root/variables";
+@import "other/mixins";
+@import "other/fonts";
+@import "root/normalize";
+@import "root/icons";
+@import "root/grid";
+
+@import "components/pre-header";
+@import "components/header";
+@import "components/footer";
+@import "components/shop-card";
+@import "components/breadcrumbs";
+@import "components/filter";
+@import "components/catalog";
+
+@import "components/main-categories";
+
+@import "root/main";
+
+@import "other/helpers";
+
+@import "other/media";
+
+.sz-20{
+  width: 20px;
+  height: 20px;
+}
