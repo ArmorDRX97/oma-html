@@ -1,0 +1,27 @@
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: rem(14);
+  font-weight: 700;
+  height: 38px;
+  padding: 0 17px;
+  border-radius: 50px;
+  transition: 0.15s all ease;
+
+  i {
+    font-size: rem(16);
+    margin-right: 6px;
+  }
+
+  &.btn-main {
+    background-color: $mainColor;
+    color: #fff;
+
+    &:hover {
+      background-color: #e89c02;
+    }
+  }
+}

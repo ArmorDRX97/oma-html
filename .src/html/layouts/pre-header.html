@@ -13,33 +13,6 @@
                         <li class="pre-nav-item"><a href="#!">Вопросы и ответы</a></li>
                     </ul>
                     <div class="right-nav">
-                       <div class="location">
-                           <span class="dropdown"><i class="icon icon-location"></i> Астана <i class="icon icon-chevron-down"></i></span>
-                           <div class="dropdown-content">
-                               <div class="row">
-                                   <div class="col-12 col-md-6">
-                                       <ul>
-                                           <li><a href="#!">Алматы</a></li>
-                                           <li><a href="#!">Усть-Каменагорск</a></li>
-                                           <li><a href="#!">Шымкент</a></li>
-                                           <li><a href="#!">Караганда</a></li>
-                                           <li><a href="#!">Актау</a></li>
-                                           <li><a href="#!">Атырау</a></li>
-                                       </ul>
-                                   </div>
-                                   <div class="col-12 col-md-6">
-                                       <ul>
-                                           <li><a href="#!">Тараз</a></li>
-                                           <li><a href="#!">Туркестан</a></li>
-                                           <li><a href="#!">Костанай</a></li>
-                                           <li><a href="#!">Петропавловск</a></li>
-                                           <li><a href="#!">Атырау</a></li>
-                                           <li><a href="#!">Павлодар</a></li>
-                                       </ul>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
                         <div class="dark-theme-switch">
                             <input type="checkbox" hidden="hidden" id="dark-theme">
                             <label class="switch" for="dark-theme"></label>
@@ -55,6 +28,7 @@
                                 </ul>
                             </div>
                         </div>
+                        {% include 'components/location-block.html' %}
                     </div>
                 </div>
             </div>

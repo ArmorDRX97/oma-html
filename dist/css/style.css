@@ -1624,6 +1624,124 @@ Generated using nucleoapp.com
   padding-left: 3rem !important;
 }
 
+.btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 700;
+  height: 38px;
+  padding: 0 17px;
+  border-radius: 50px;
+  -webkit-transition: 0.15s all ease;
+  -o-transition: 0.15s all ease;
+  transition: 0.15s all ease;
+}
+
+.btn i {
+  font-size: 1rem;
+  margin-right: 6px;
+}
+
+.btn.btn-main {
+  background-color: #FFAB02;
+  color: #fff;
+}
+
+.btn.btn-main:hover {
+  background-color: #e89c02;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0 12px;
+  font-size: 1rem;
+  line-height: 1;
+  height: 48px;
+  color: #1D2023;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #D9D9D9;
+  border-radius: 8px;
+  -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  -o-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+
+.form-control.form-control-sm {
+  height: 38px;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #8C959C;
+}
+
+.form-control::-moz-placeholder {
+  color: #8C959C;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #8C959C;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #8C959C;
+}
+
+.form-control::placeholder {
+  color: #8C959C;
+}
+
+.form-control:focus {
+  border: 1px solid #afafaf !important;
+}
+
+.form-control:focus-visible {
+  outline: none !important;
+}
+
+.dark-theme .form-control {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #8C959C;
+}
+
+.dark-theme .form-control:focus-visible,
+.dark-theme .form-control:active,
+.dark-theme .form-control:focus {
+  border: 1px solid #fff;
+}
+
+.dark-theme .form-control::-webkit-input-placeholder {
+  color: #D9D9D9;
+}
+
+.dark-theme .form-control::-moz-placeholder {
+  color: #D9D9D9;
+}
+
+.dark-theme .form-control:-ms-input-placeholder {
+  color: #D9D9D9;
+}
+
+.dark-theme .form-control::-ms-input-placeholder {
+  color: #D9D9D9;
+}
+
+.dark-theme .form-control::placeholder {
+  color: #D9D9D9;
+}
+
 .dark-theme .pre-header {
   background-color: #1D2023;
 }
@@ -1670,7 +1788,7 @@ Generated using nucleoapp.com
 }
 
 .pre-header .pre-nav-content .pre-nav li a {
-  font-size: 0.92857rem;
+  font-size: 0.8125rem;
   color: #494F54;
   -webkit-transition: 0.15s all ease;
   -o-transition: 0.15s all ease;
@@ -1690,42 +1808,52 @@ Generated using nucleoapp.com
           align-items: center;
 }
 
-.pre-header .location {
+.pre-header .location-block {
   position: relative;
   display: inline-block;
 }
 
-.pre-header .location .dropdown {
+.pre-header .location-block .dropdown {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 0.92857rem;
+  font-size: 0.8125rem;
   cursor: pointer;
 }
 
-.pre-header .location .dropdown .icon-location {
-  font-size: 1rem;
+.pre-header .location-block .dropdown .icon-location {
+  font-size: 0.875rem;
   color: #8C959C;
   margin-right: 6px;
 }
 
-.pre-header .location .dropdown .icon-chevron-down {
+.pre-header .location-block .dropdown .icon-chevron-down {
   margin-left: 6px;
-  font-size: 1.14286rem;
+  font-size: 1rem;
   color: #D9D9D9;
 }
 
-.pre-header .location .dropdown-content {
+.pre-header .location-block .dropdown-content.location {
   position: absolute;
   top: 0;
   right: 0;
   z-index: 1;
   opacity: 0;
-  width: 350px;
+  width: auto;
   background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   border-radius: 8px;
   border: 1px solid rgba(217, 217, 217, 0.2);
   padding: 15px 20px;
@@ -1737,35 +1865,59 @@ Generated using nucleoapp.com
   transition: 0.3s all cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-.pre-header .location .dropdown-content.show {
+.pre-header .location-block .dropdown-content.location.show {
   top: 35px;
   opacity: 1;
   visibility: visible;
 }
 
-.pre-header .location .dropdown-content ul {
+.pre-header .location-block .dropdown-content.location ul {
   list-style: none;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
   margin: 0;
 }
 
-.pre-header .location .dropdown-content ul li {
-  margin-bottom: 10px;
-}
-
-.pre-header .location .dropdown-content ul li:last-child {
-  margin-bottom: 0;
-}
-
-.pre-header .location .dropdown-content ul li a {
+.pre-header .location-block .dropdown-content.location ul li a {
+  padding: 6px 12px;
+  border-radius: 5px;
   -webkit-transition: 0.15s all ease;
   -o-transition: 0.15s all ease;
   transition: 0.15s all ease;
+  display: block;
 }
 
-.pre-header .location .dropdown-content ul li a:hover {
-  color: #FFAB02;
+.pre-header .location-block .dropdown-content.location ul li a:hover {
+  background-color: #f2f2f2;
+}
+
+.pre-header .location-block .dropdown-content.location .region {
+  width: 250px;
+}
+
+.pre-header .location-block .dropdown-content.location .city {
+  display: none;
+  width: 250px;
+  border-right: 1px solid #D9D9D9;
+  margin-right: 15px;
+  padding-right: 15px;
+  max-height: 500px;
+  overflow: auto;
+}
+
+.pre-header .location-block .dropdown-content.location .city::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #F6F6F5;
+}
+
+.pre-header .location-block .dropdown-content.location .city::-webkit-scrollbar {
+  width: 7px;
+  background-color: #F6F6F5;
+}
+
+.pre-header .location-block .dropdown-content.location .city::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #D9D9D9;
 }
 
 .pre-header .dark-theme-switch {
@@ -1775,30 +1927,11 @@ Generated using nucleoapp.com
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 32px;
   position: relative;
 }
 
-.pre-header .dark-theme-switch:before,
-.pre-header .dark-theme-switch:after {
-  content: '';
-  position: absolute;
-  top: 3px;
-  height: 18px;
-  width: 1px;
-  background-color: #F6F6F5;
-}
-
-.pre-header .dark-theme-switch:before {
-  left: -16px;
-}
-
-.pre-header .dark-theme-switch:after {
-  right: -16px;
-}
-
 .pre-header .dark-theme-switch span {
-  font-size: 0.92857rem;
+  font-size: 0.8125rem;
   margin-left: 10px;
   color: #494F54;
 }
@@ -1855,10 +1988,29 @@ Generated using nucleoapp.com
 .pre-header .lang {
   position: relative;
   line-height: 0;
+  margin: 0 32px;
+}
+
+.pre-header .lang:before,
+.pre-header .lang:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  height: 18px;
+  width: 1px;
+  background-color: #F6F6F5;
+}
+
+.pre-header .lang:before {
+  left: -16px;
+}
+
+.pre-header .lang:after {
+  right: -16px;
 }
 
 .pre-header .lang .dropdown {
-  font-size: 0.92857rem;
+  font-size: 0.8125rem;
   color: #494F54;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1876,7 +2028,7 @@ Generated using nucleoapp.com
 .pre-header .lang .dropdown .icon-chevron-down {
   margin-left: 6px;
   color: #D9D9D9;
-  font-size: 1.14286rem;
+  font-size: 1rem;
 }
 
 .pre-header .lang .dropdown-content {
@@ -1939,8 +2091,32 @@ Generated using nucleoapp.com
   color: #fff;
 }
 
+.dark-theme .pre-header .location-block .dropdown-content.location {
+  background-color: #2F3134;
+}
+
+.dark-theme .pre-header .location-block .dropdown-content.location ul li a {
+  color: #fff;
+}
+
+.dark-theme .pre-header .location-block .dropdown-content.location ul li a:hover {
+  background-color: #202123;
+}
+
 .dark-theme .pre-header .lang .dropdown {
   color: #fff;
+}
+
+.dark-theme .pre-header .lang .dropdown-content {
+  background-color: #2F3134;
+}
+
+.dark-theme .pre-header .lang .dropdown-content ul li a {
+  color: #fff;
+}
+
+.dark-theme .pre-header .lang .dropdown-content ul li a:hover {
+  color: #FFAB02;
 }
 
 .index .navbar {
@@ -2079,7 +2255,7 @@ Generated using nucleoapp.com
   left: 150px;
   color: #fff;
   visibility: hidden;
-  font-size: 1.14286rem;
+  font-size: 1rem;
   font-weight: 700;
   opacity: 0;
   -webkit-transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
@@ -2092,7 +2268,7 @@ Generated using nucleoapp.com
   top: 13px;
   left: 50px;
   z-index: 2;
-  font-size: 1.14286rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #fff;
   margin: 0;
@@ -2143,9 +2319,19 @@ Generated using nucleoapp.com
 }
 
 .navbar .nav-content #menu-toggle .catalog .catalog-title {
-  font-size: 1.28571rem;
+  font-size: 1.125rem;
   font-weight: 500;
   margin: 0 0 20px 0;
+}
+
+.navbar .nav-content #menu-toggle .catalog a {
+  -webkit-transition: 0.15s all ease;
+  -o-transition: 0.15s all ease;
+  transition: 0.15s all ease;
+}
+
+.navbar .nav-content #menu-toggle .catalog a:hover {
+  color: #FFAB02;
 }
 
 .navbar .nav-content #menu-toggle .catalog ul {
@@ -2168,24 +2354,17 @@ Generated using nucleoapp.com
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 1.14286rem;
+  font-size: 1rem;
   cursor: pointer;
-  -webkit-transition: 0.15s all ease;
-  -o-transition: 0.15s all ease;
-  transition: 0.15s all ease;
 }
 
 .navbar .nav-content #menu-toggle .catalog ul li a i {
   opacity: 0;
   margin-right: 10px;
-  font-size: 1.14286rem;
+  font-size: 1rem;
   -webkit-transition: 0.2s margin-right ease;
   -o-transition: 0.2s margin-right ease;
   transition: 0.2s margin-right ease;
-}
-
-.navbar .nav-content #menu-toggle .catalog ul li a:hover {
-  color: #FFAB02;
 }
 
 .navbar .nav-content #menu-toggle .catalog ul li a:hover i {
@@ -2254,7 +2433,7 @@ Generated using nucleoapp.com
   right: 10px;
   background-color: transparent;
   border: none;
-  font-size: 1.14286rem;
+  font-size: 1rem;
   color: #FFAB02;
   cursor: pointer;
 }
@@ -2275,8 +2454,42 @@ Generated using nucleoapp.com
 
 .navbar .nav-content .actions a {
   margin-left: 32px;
+  line-height: 1;
+  text-align: center;
+  position: relative;
+}
+
+.navbar .nav-content .actions a.badge:before {
+  content: attr(badge);
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 23px;
+  height: 18px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1;
+  border-radius: 8px;
+  background-color: #D9D9D9;
+  color: #fff;
+}
+
+.navbar .nav-content .actions a.badge-active:before {
+  background-color: #F89500;
+}
+
+.navbar .nav-content .actions a i {
   color: #8C959C;
-  font-size: 1.42857rem;
+  font-size: 1.25rem;
   -webkit-transition: 0.15s all ease;
   -o-transition: 0.15s all ease;
   transition: 0.15s all ease;
@@ -2286,8 +2499,21 @@ Generated using nucleoapp.com
   margin-left: 0;
 }
 
+.navbar .nav-content .actions a span {
+  font-size: 0.875rem;
+  color: #1D2023;
+  -webkit-transition: 0.15s all ease;
+  -o-transition: 0.15s all ease;
+  transition: 0.15s all ease;
+}
+
 .navbar .nav-content .actions a:hover {
   color: #FFAB02;
+}
+
+.navbar .nav-content .actions a:hover i,
+.navbar .nav-content .actions a:hover span {
+  color: #FFAB02 !important;
 }
 
 .big-list {
@@ -2298,9 +2524,42 @@ Generated using nucleoapp.com
   background-color: #1D2023;
 }
 
+.dark-theme .navbar .nav-content .actions a.badge:before {
+  background-color: #fff;
+  color: #1d1d1d;
+}
+
+.dark-theme .navbar .nav-content .actions a.badge-active:before {
+  background-color: #F89500;
+}
+
+.dark-theme .navbar .nav-content .actions a span {
+  color: #fff;
+}
+
 .dark-theme .search-form .search {
   background-color: transparent;
   color: #fff;
+}
+
+.dark-theme .search-form .search::-webkit-input-placeholder {
+  color: #D9D9D9;
+}
+
+.dark-theme .search-form .search::-moz-placeholder {
+  color: #D9D9D9;
+}
+
+.dark-theme .search-form .search:-ms-input-placeholder {
+  color: #D9D9D9;
+}
+
+.dark-theme .search-form .search::-ms-input-placeholder {
+  color: #D9D9D9;
+}
+
+.dark-theme .search-form .search::placeholder {
+  color: #D9D9D9;
 }
 
 .dark-theme #menu-toggle .catalog {
@@ -2315,7 +2574,7 @@ Generated using nucleoapp.com
 }
 
 .footer .footer-title {
-  font-size: 1.42857rem;
+  font-size: 1.25rem;
   font-weight: 500;
   margin: 0 0 25px 0;
 }
@@ -2344,7 +2603,7 @@ Generated using nucleoapp.com
 
 .footer .phone {
   display: block;
-  font-size: 1.71429rem;
+  font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 10px;
   -webkit-transition: 0.15s all ease;
@@ -2389,7 +2648,7 @@ Generated using nucleoapp.com
   position: absolute;
   top: 8px;
   left: 8px;
-  font-size: 0.78571rem;
+  font-size: 0.6875rem;
   font-weight: 600;
   text-transform: uppercase;
   padding: 4px 7px;
@@ -2403,8 +2662,13 @@ Generated using nucleoapp.com
   position: absolute;
   top: 8px;
   right: 8px;
+  z-index: 12;
   color: #8C959C;
-  font-size: 1.28571rem;
+  font-size: 1.125rem;
+}
+
+.shop-card .card-image .favorit:hover {
+  color: #FFAB02;
 }
 
 .shop-card .card-image .favorit .icon-like-active {
@@ -2447,7 +2711,7 @@ Generated using nucleoapp.com
 
 .shop-card .card-body .info-content .stars-reviews .stars,
 .shop-card .card-body .info-content .stars-reviews .reviews {
-  font-size: 0.85714rem;
+  font-size: 0.75rem;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2488,7 +2752,7 @@ Generated using nucleoapp.com
 .shop-card .card-body .price-content .price {
   margin: 4px 0 0 0;
   font-weight: 600;
-  font-size: 1.42857rem;
+  font-size: 1.25rem;
 }
 
 .shop-card .card-body .price-content .price .currency {
@@ -2500,7 +2764,7 @@ Generated using nucleoapp.com
 .shop-card .card-body .price-content .price .old-price {
   margin-left: 10px;
   font-weight: 400 !important;
-  font-size: 1.14286rem;
+  font-size: 1rem;
   color: #8C959C;
   text-decoration: line-through;
 }
@@ -2517,7 +2781,7 @@ Generated using nucleoapp.com
           justify-content: center;
   width: 45px;
   height: 18px;
-  font-size: 0.85714rem;
+  font-size: 0.75rem;
   color: #fff;
   position: relative;
 }
@@ -2531,7 +2795,7 @@ Generated using nucleoapp.com
   content: '\ea14';
   display: inline-block;
   font: normal normal normal 1em/1 'Nucleo';
-  font-size: 1.21429rem;
+  font-size: 1.0625rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2580,16 +2844,22 @@ Generated using nucleoapp.com
   content: none;
 }
 
+.breadcrumbs .breadcrumbs-list li span {
+  color: #494F54;
+  font-size: 0.75rem;
+}
+
 .breadcrumbs .breadcrumbs-list li .breadcrumb {
   color: #494F54;
-  font: 0.85714rem;
+  font-size: 0.75rem;
 }
 
 .breadcrumbs .breadcrumbs-list li .breadcrumb:hover {
   color: #FFAB02;
 }
 
-.dark-theme .breadcrumbs .breadcrumbs-list li .breadcrumb {
+.dark-theme .breadcrumbs .breadcrumbs-list li .breadcrumb,
+.dark-theme .breadcrumbs .breadcrumbs-list li span {
   color: #fff;
 }
 
@@ -2609,7 +2879,7 @@ Generated using nucleoapp.com
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.14286rem;
+  font-size: 1rem;
   margin-bottom: 12px;
   -webkit-transition: 0.15s all ease;
   -o-transition: 0.15s all ease;
@@ -2649,13 +2919,13 @@ Generated using nucleoapp.com
 }
 
 .filter .title {
-  font-size: 1.28571rem;
+  font-size: 1.125rem;
   font-weight: 500;
   margin-bottom: 20px;
 }
 
 .filter .title span {
-  font-size: 1.14286rem;
+  font-size: 1rem;
   font-weight: 400;
   color: #8C959C;
   margin-left: 7px;
@@ -2744,11 +3014,103 @@ Generated using nucleoapp.com
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.07143rem;
+  font-size: 0.9375rem;
 }
 
 .main-categories li a svg {
   margin-right: 10px;
+}
+
+.good-container-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(140, 149, 156, 0.2);
+}
+
+.good-container-header div {
+  margin-right: 24px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1;
+  color: #8C959C;
+  font-size: 14px;
+}
+
+.good-container-header div span {
+  font-size: inherit;
+}
+
+.good-container-header div i {
+  margin-right: 7px;
+}
+
+.good-container-header .rating i {
+  margin-right: 0;
+}
+
+.good-container-header .rating i:nth-child(5) {
+  margin-right: 7px !important;
+}
+
+.good-container-header .articul {
+  font-size: 0.875rem;
+  color: #8C959C;
+}
+
+.good-container .good-item-swiper-container {
+  position: relative;
+}
+
+.good-container .good-item-swiper-container .good-item-swiper {
+  height: 500px;
+}
+
+.good-container .good-item-swiper-container .good-item-swiper img {
+  width: 100%;
+  height: auto;
+}
+
+.good-container .good-item-swiper-container .good-item-swiper-pagination {
+  width: 62px !important;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 12;
+}
+
+.good-container .good-item-swiper-container .good-item-swiper-pagination .swiper-pagination-bullet {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  left: 0 !important;
+}
+
+.good-container .good-item-swiper-container .good-item-swiper-pagination .swiper-pagination-bullet img {
+  width: 100%;
+  height: auto;
 }
 
 a {
@@ -2794,8 +3156,12 @@ main {
 
 .global-title {
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.75rem;
   margin: 0;
+}
+
+.global-title.big {
+  font-size: 2rem;
 }
 
 .mini-banner-ads {
@@ -2818,41 +3184,6 @@ main {
           transform: scale(1.03);
 }
 
-.btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 700;
-  height: 38px;
-  padding: 0 17px;
-  border-radius: 50px;
-  -webkit-transition: 0.15s all ease;
-  -o-transition: 0.15s all ease;
-  transition: 0.15s all ease;
-}
-
-.btn i {
-  font-size: 1.14286rem;
-  margin-right: 6px;
-}
-
-.btn.btn-main {
-  background-color: #FFAB02;
-  color: #fff;
-}
-
-.btn.btn-main:hover {
-  background-color: #e89c02;
-}
-
 .rek {
   display: block;
   margin: 50px 0 30px 0;
@@ -2868,7 +3199,7 @@ main {
   background-color: #FAFAFA;
   padding: 6px 12px;
   border-radius: 7px;
-  font-size: 0.92857rem;
+  font-size: 0.8125rem;
   color: #7A848B;
   margin-right: 6px;
   margin-bottom: 6px;
@@ -2921,7 +3252,7 @@ main {
 }
 
 .swiper-container [class^="swiper-button-"]:after {
-  font-size: 1.14286rem;
+  font-size: 1rem;
 }
 
 .swiper-container .swiper-button-prev {
@@ -3005,7 +3336,7 @@ main {
 }
 
 .banner [class^="swiper-button-"]:after {
-  font-size: 1.14286rem;
+  font-size: 1rem;
 }
 
 .banner .swiper-button-prev {
@@ -3057,7 +3388,7 @@ main {
 
 .category-card .card-body .title {
   margin: 0;
-  font-size: 1.14286rem;
+  font-size: 1rem;
 }
 
 .category-card:hover .card-image img {
@@ -3094,13 +3425,13 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.14286rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.3;
 }
 
 .info-card i {
-  font-size: 1.71429rem;
+  font-size: 1.5rem;
   margin-right: 15px;
   color: #FFAB02;
   width: 50px;
@@ -3151,13 +3482,13 @@ main {
 }
 
 .form-index .title {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 600;
   margin: 0 0 15px 0;
 }
 
 .form-index .subtitle {
-  font-size: 1.28571rem;
+  font-size: 1.125rem;
   color: #494F54;
   margin: 0 0 30px 0;
 }
@@ -3288,61 +3619,6 @@ main {
           transform: rotate(45deg);
 }
 
-.form-control {
-  display: block;
-  width: 100%;
-  padding: 0 8px;
-  height: 38px;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #D9D9D9;
-  border-radius: 8px;
-  -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
-  -o-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
-}
-
-.form-control:focus-visible,
-.form-control:active,
-.form-control:focus {
-  outline: none !important;
-  border: 1px solid #8C959C;
-}
-
-.dark-theme .form-control {
-  background-color: transparent;
-  color: #fff;
-  border: 1px solid #8C959C;
-}
-
-.dark-theme .form-control:focus-visible,
-.dark-theme .form-control:active,
-.dark-theme .form-control:focus {
-  border: 1px solid #fff;
-}
-
-.dark-theme .form-control::-webkit-input-placeholder {
-  color: #D9D9D9;
-}
-
-.dark-theme .form-control::-moz-placeholder {
-  color: #D9D9D9;
-}
-
-.dark-theme .form-control:-ms-input-placeholder {
-  color: #D9D9D9;
-}
-
-.dark-theme .form-control::-ms-input-placeholder {
-  color: #D9D9D9;
-}
-
-.dark-theme .form-control::placeholder {
-  color: #D9D9D9;
-}
-
 .search .form-control {
   padding: 0 35px 0 8px;
 }
@@ -3358,7 +3634,7 @@ main {
   top: 10px;
   right: 10px;
   color: #D9D9D9;
-  font-size: 1.14286rem;
+  font-size: 1rem;
 }
 
 .catalog-sort .form-group {
@@ -3366,7 +3642,7 @@ main {
 }
 
 .catalog-sort .grid-view {
-  font-size: 1.42857rem;
+  font-size: 1.25rem;
   margin-left: 8px;
   color: #D9D9D9;
   cursor: pointer;
@@ -3397,7 +3673,7 @@ main {
 }
 
 .show-more i {
-  font-size: 1rem;
+  font-size: 0.875rem;
   margin-right: 10px;
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
@@ -3441,7 +3717,7 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   color: #494F54;
-  font-size: 1.14286rem;
+  font-size: 1rem;
   font-weight: 500;
   margin-left: 5px;
 }
@@ -3472,7 +3748,7 @@ main {
 }
 
 .pagination a .icon {
-  font-size: 1.14286rem;
+  font-size: 1rem;
   color: #8C959C;
 }
 
@@ -3543,7 +3819,7 @@ main {
 
 .latest-view-card .card-body .price {
   font-weight: 600;
-  font-size: 1.28571rem;
+  font-size: 1.125rem;
 }
 
 .latest-view-card .card-body .price .currency {
@@ -3561,7 +3837,7 @@ main {
   line-clamp: 3;
   -webkit-box-orient: vertical;
   color: #8C959C;
-  font-size: 0.85714rem;
+  font-size: 0.75rem;
 }
 
 .img-fluid {
@@ -8442,11 +8718,11 @@ main {
   }
 
   .global-title {
-    font-size: 1.42857rem;
+    font-size: 1.25rem;
   }
 
-  .global-title .big {
-    font-size: 1.71429rem;
+  .global-title.big {
+    font-size: 1.5rem;
   }
 
   .latest-view-title {
@@ -8485,7 +8761,7 @@ main {
   }
 
   .form-index .title {
-    font-size: 1.71429rem;
+    font-size: 1.5rem;
   }
 
   .form-index .form-group-index input {

@@ -22,18 +22,20 @@
             {% include 'components/sliders/banner-swiper.html' %}
         </section>
 
+        <!--
         <section class="section goods-slider">
             <h4 class="global-title mb-25">
                 Рекомендуем вам
             </h4>
             {% include 'components/sliders/recommended-swiper.html' %}
         </section>
+        -->
 
         <section class="section goods-slider">
             <h4 class="global-title mb-25">
                 Новинки
             </h4>
-            {% include 'components/sliders/new-swiper.html' %}
+            {% include 'components/new-items-grid.html' %}
         </section>
     </div>
 </div>
@@ -63,6 +65,7 @@
     {% include 'components/brand-cards.html' %}
 </section>
 
+<!--
 <section class="section pt-100">
     <div class="row">
         <div class="col-12 col-lg-5">
@@ -108,5 +111,5 @@
 <section class="section pt-70">
     {% include 'components/email-subscribe.html' %}
 </section>
-
+-->
 {% endblock %}

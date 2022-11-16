@@ -83,13 +83,11 @@ function svgSpriteBuild() {
 }
 
 const manageEnvironment = (environment) => {
-    const links = JSON.parse(fs.readFileSync('data/links.json'));
     const mainCategories = JSON.parse(fs.readFileSync('data/main_categories.json'));
     const goods = JSON.parse(fs.readFileSync('data/goods.json'));
     const catalog = JSON.parse(fs.readFileSync('data/menu_catalog.json'));
     const filters = JSON.parse(fs.readFileSync('data/filters.json'));
     environment.addGlobal('data', {
-        links,
         mainCategories,
         goods,
         catalog,

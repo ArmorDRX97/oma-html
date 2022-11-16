@@ -27,9 +27,12 @@
       position: absolute;
       top: 8px;
       right: 8px;
+      z-index: 12;
       color: $greyColor;
       font-size: rem(18);
-
+    &:hover{
+      color: $mainColor;
+    }
       .icon-like-active {
         color: $mainColor;
       }

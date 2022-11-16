@@ -1,5 +1,104 @@
 {% extends 'layouts/base.html' %}
 
 {% block content %}
+<div class="breadcrumbs mb-30">
+    <ul class="breadcrumbs-list">
+        <li><a href="#!" class="breadcrumb">Главная</a></li>
+        <li><a href="#!" class="breadcrumb">Электроника</a></li>
+        <li><a href="#!" class="breadcrumb">Умные часы и браслеты</a></li>
+        <li><a href="#!" class="breadcrumb">Смарт-часы</a></li>
+        <li><span>Умная колонка Яндекс Станция 2 с Алисой черный антрацит</span></li>
+    </ul>
+</div>
 
+<h4 class="global-title big">Умная колонка Яндекс Станция 2 с Алисой черный антрацит</h4>
+
+<div class="good-container">
+    <div class="good-container-header">
+        <div class="d-flex align-items-center">
+            <div class="rating">
+                <i class="icon icon-star"></i>
+                <i class="icon icon-star"></i>
+                <i class="icon icon-star"></i>
+                <i class="icon icon-star"></i>
+                <i class="icon icon-star half"></i>
+                <span>4.3</span>
+            </div>
+            <div class="comments">
+                <i class="icon icon-chat"></i>
+                <span>65 отзыва</span>
+            </div>
+            <div class="favorit">
+                <i class="icon icon-like"></i>
+                <span>В избранное</span>
+            </div>
+        </div>
+        <p class="articul">Артикул 100 030 020 889</p>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <div class="good-item-swiper-container">
+                <div class="swiper good-item-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/fake-goods/image-85.png" alt="Good" title="Товар">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/fake-goods/image-85-1.png" alt="Good" title="Товар">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/fake-goods/image-85-2.png" alt="Good" title="Товар">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/fake-goods/image-85-3.png" alt="Good" title="Товар">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/fake-goods/image-85-4.png" alt="Good" title="Товар">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/fake-goods/image-85-5.png" alt="Good" title="Товар">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/fake-goods/image-85-6.png" alt="Good" title="Товар">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/fake-goods/image-85-7.png" alt="Good" title="Товар">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/fake-goods/image-85-8.png" alt="Good" title="Товар">
+                        </div>
+                    </div>
+                </div>
+                <div class="good-item-swiper-pagination"></div>
+
+            </div>
+        </div>
+        <div class="col-12 col-md-3">
+            <ul class="characteristics">
+                <li>Тип: <span>Умная колонка</span></li>
+                <li>Мощность (Вт): <span>30</span></li>
+                <li>Источник питания: <span>от электросети</span></li>
+                <li>Количество динамиков: <span>2</span></li>
+                <li>Тип акустической системы: <span>2.0</span></li>
+                <li>Частотный диапозон (Гц): <span>65-20000</span></li>
+                <li>Bluetooth: <span>Есть, 5.0</span></li>
+                <li>Цвет: <span>Антрацит</span></li>
+                <li>Материал корпуса: <span>Пластик</span></li>
+                <li>Сабвуфер: <span>Нет</span></li>
+                <li>Голосовой помощник: <span>Алиса</span></li>
+            </ul>
+            <a href="#!">Все характеристики</a>
+        </div>
+        <div class="col-12 col-md-3">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores doloremque earum enim, explicabo fuga fugit incidunt ipsam obcaecati officiis, quae quas quia quod rem reprehenderit suscipit ullam, vitae. Aliquam debitis eius impedit minus pariatur praesentium reprehenderit vel, veritatis. Beatae?
+        </div>
+    </div>
+   <section class="section">
+       <h4 class="global-title mb-25">
+           Похожие товары
+       </h4>
+       {% include 'components/sliders/similar-products-swiper.html' %}
+   </section>
+</div>
 {% endblock %}

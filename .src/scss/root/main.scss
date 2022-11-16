@@ -5,7 +5,7 @@ a {
 
 html, body {
   font-family: $mainFont;
-  font-size: rem(14);
+  font-size: rem(16);
   font-weight: 400;
   background-color: #fff;
   color: $blackColor;
@@ -59,7 +59,8 @@ main {
     font-size: rem(20);
   }
 
-  .big {
+  &.big {
+    font-size: rem(32);
     @media screen and (max-width: 480px) {
       font-size: rem(24);
     }
@@ -87,33 +88,6 @@ main {
   &:hover {
     img {
       transform: scale(1.03);
-    }
-  }
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  font-size: rem(14);
-  font-weight: 700;
-  height: 38px;
-  padding: 0 17px;
-  border-radius: 50px;
-  transition: 0.15s all ease;
-
-  i {
-    font-size: rem(16);
-    margin-right: 6px;
-  }
-
-  &.btn-main {
-    background-color: $mainColor;
-    color: #fff;
-
-    &:hover {
-      background-color: #e89c02;
     }
   }
 }
@@ -561,39 +535,6 @@ main {
   transform: rotate(45deg);
 }
 
-
-.form-control {
-  display: block;
-  width: 100%;
-  padding: 0 8px;
-  height: 38px;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #D9D9D9;
-  border-radius: 8px;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-
-  &:focus-visible, &:active, &:focus {
-    outline: none !important;
-    border: 1px solid #8C959C;
-  }
-}
-
-.dark-theme {
-  .form-control {
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #8C959C;
-
-    &:focus-visible, &:active, &:focus {
-      border: 1px solid #fff;
-    }
-
-    &::placeholder {
-      color: #D9D9D9;
-    }
-  }
-}
 
 .search {
   .form-control {

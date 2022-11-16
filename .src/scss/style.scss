@@ -5,15 +5,19 @@
 @import "root/icons";
 @import "root/grid";
 
-@import "components/pre-header";
-@import "components/header";
-@import "components/footer";
-@import "components/shop-card";
-@import "components/breadcrumbs";
-@import "components/filter";
-@import "components/catalog";
+@import "components/buttons";
+@import "components/form-control";
 
-@import "components/main-categories";
+@import "modules/pre-header";
+@import "modules/header";
+@import "modules/footer";
+@import "modules/shop-card";
+@import "modules/breadcrumbs";
+@import "modules/filter";
+@import "modules/catalog";
+
+@import "modules/main-categories";
+@import "modules/good-container";
 
 @import "root/main";
 

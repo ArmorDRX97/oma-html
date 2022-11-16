@@ -14,7 +14,7 @@
     <div class="col-12 col-md-4 level-container" id="second-level-block">
         {% for item1 in data.catalog %}
         <div class="second-level" parent-id="{{item1.id}}">
-            <p class="catalog-title">{{item1.title}}</p>
+            <a href="#!" class="catalog-title">{{item1.title}}</a>
             <ul>
                 {% for item2 in item1.list %}
                 <li><a href="/catalog.html" id="{{item2.id}}">{{item2.title}}<i
@@ -30,7 +30,7 @@
         {% for item1 in data.catalog %}
         {% for item2 in item1.list %}
         <div class="third-level" parent-id="{{item2.id}}">
-            <p class="catalog-title">{{item2.title}}</p>
+            <a href="#!" class="catalog-title">{{item2.title}}</a>
             <ul>
                 {% for item3 in item2.list %}
                 <li><a href="/catalog.html">{{item3.title}} ({{item3.count}})</a></li>

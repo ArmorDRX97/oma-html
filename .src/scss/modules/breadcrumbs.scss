@@ -26,9 +26,14 @@
         }
       }
 
+      span {
+        color: #494F54;
+        font-size: rem(12);
+      }
+
       .breadcrumb {
         color: #494F54;
-        font: rem(12);
+        font-size: rem(12);
 
         &:hover {
           color: $mainColor;
@@ -42,7 +47,7 @@
   .breadcrumbs {
     .breadcrumbs-list {
       li {
-        .breadcrumb {
+        .breadcrumb, span {
           color: #fff;
         }
       }

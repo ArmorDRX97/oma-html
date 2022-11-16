@@ -1,0 +1,42 @@
+.form-control{
+  display: block;
+  width: 100%;
+  padding: 0 12px;
+  font-size: rem(16);
+  line-height: 1;
+  height: 48px;
+  color: #1D2023;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #D9D9D9;
+  border-radius: 8px;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  &.form-control-sm{
+    height: 38px;
+  }
+  &::placeholder{
+    color: #8C959C;
+  }
+  &:focus{
+    border: 1px solid #afafaf!important;
+  }
+  &:focus-visible{
+    outline: none!important;
+  }
+}
+
+.dark-theme {
+  .form-control {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #8C959C;
+
+    &:focus-visible, &:active, &:focus {
+      border: 1px solid #fff;
+    }
+
+    &::placeholder {
+      color: #D9D9D9;
+    }
+  }
+}
