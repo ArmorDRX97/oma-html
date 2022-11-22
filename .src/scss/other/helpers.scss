@@ -3,6 +3,11 @@
   height: auto;
 }
 
+.img-auto{
+  width: auto;
+  height: auto;
+}
+
 .regular{
   font-weight: 400!important;
 }
@@ -43,6 +48,10 @@
   overflow: hidden;
 }
 
+.bra-20{
+  border-radius: 20px;
+}
+
 .mb-20{
   margin-bottom: 20px;
 }
@@ -59,8 +68,24 @@
   margin-bottom: 40px;
 }
 
+.mb-50{
+  margin-bottom: 50px;
+}
+
+.mt-20{
+  margin-top: 20px;
+}
+
+.mt-32{
+  margin-top: 32px;
+}
+
 .mt-50{
   margin-top: 50px;
+}
+
+.mt-75{
+  margin-top: 75px;
 }
 
 .mt-90{

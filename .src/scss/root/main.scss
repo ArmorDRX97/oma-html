@@ -17,6 +17,10 @@ html, body {
   }
 }
 
+body{
+  overflow-x: hidden;
+}
+
 button {
   cursor: pointer;
 
@@ -58,7 +62,9 @@ main {
   @media screen and (max-width: 480px) {
     font-size: rem(20);
   }
-
+  &.small{
+    font-size: rem(24);
+  }
   &.big {
     font-size: rem(32);
     @media screen and (max-width: 480px) {
@@ -164,6 +170,7 @@ main {
 
   .swiper-button-prev {
     left: -25px;
+    padding-right: 3px;
     @media screen and (max-width: 480px) {
       left: -5px;
     }
@@ -171,6 +178,7 @@ main {
 
   .swiper-button-next {
     right: -25px;
+    padding-left: 3px;
     @media screen and (max-width: 480px) {
       right: -5px;
     }
@@ -499,6 +507,9 @@ main {
 .form-check + label {
   position: relative;
   cursor: pointer;
+  &:hover{
+    color: $mainColor;
+  }
 }
 
 .form-check + label:before {
@@ -517,6 +528,10 @@ main {
   margin-right: 10px;
 }
 
+.form-check:checked + label{
+  color: $mainColor;
+}
+
 .form-check:checked + label:before {
   background-color: $mainColor;
   border: 1px solid $mainColor;
@@ -526,7 +541,7 @@ main {
   content: '';
   display: block;
   position: absolute;
-  top: 2px;
+  top: 4px;
   left: 5px;
   width: 6px;
   height: 10px;

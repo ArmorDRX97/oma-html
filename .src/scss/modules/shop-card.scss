@@ -16,7 +16,11 @@
       font-size: rem(11);
       font-weight: 600;
       text-transform: uppercase;
-      padding: 4px 7px;
+      height: 19px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 7px;
       background-color: #40BF40;
       border-radius: 8px;
       line-height: 1;
@@ -118,7 +122,7 @@
         .currency {
           color: $greyColor;
           font-weight: 500 !important;
-          margin-left: 5px;
+          margin-left: 2px;
         }
 
         .old-price {

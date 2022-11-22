@@ -1,10 +1,15 @@
 import {Swiper} from "../plugins";
 
-function swiperConstructor(element, pagination, navigation, slidesPerView, spaceBetween, sliderPerViewMobile) {
+function swiperConstructor(element, pagination, navigation, slidesPerView, spaceBetween, sliderPerViewMobile, autoplay = 5000) {
     const elementReplace = element.replace('-swiper', '');
     const options = {};
     if (slidesPerView) {
         options.slidesPerView = slidesPerView;
+    }
+    if (autoplay) {
+        options.autoplay = {
+            delay: autoplay
+        };
     }
     if (spaceBetween) {
         options.spaceBetween = spaceBetween;

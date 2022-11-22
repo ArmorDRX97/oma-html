@@ -1,0 +1,64 @@
+.tab-items{
+  &.good-item{
+    list-style: none;
+    padding-inline-start: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #D9D9D9;
+    li{
+      cursor: pointer;
+      margin: 0 25px 0 0;
+      font-weight: 500;
+      font-size: rem(18);
+      color: #000;
+      padding: 3px 8px 10px 8px;
+      &.active{
+        color: $mainColor;
+        border-bottom: 2px solid $mainColor;
+      }
+    }
+  }
+  &.price-tab{
+    list-style: none;
+    padding-inline-start: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 58px;
+    background-color: #F6F6F5;
+    border-radius: 22px;
+    padding: 0 5px;
+    li{
+      height: 50px;
+      padding: 0 25px;
+      border-radius: 20px;
+      display: inline-flex;
+      font-size: rem(16);
+      font-weight: 500;
+      color: #494F54;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      margin-right: 10px;
+      cursor: pointer;
+      transition: 0.15s all ease;
+      &:hover{
+        color: $mainColor;
+      }
+      &.active{
+        background-color: #fff;
+        color: $mainColor;
+      }
+    }
+  }
+}
+
+.tab-contents{
+  .tab-content{
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
+}

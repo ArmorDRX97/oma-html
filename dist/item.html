@@ -26,13 +26,13 @@
                             <li class="pre-nav-item"><a href="#!">Вопросы и ответы</a></li>
                         </ul>
                         <div class="right-nav">
-                            <div class="dark-theme-switch">
+                            <div class="dark-theme-switch" tabindex="0">
                                 <input type="checkbox" hidden="hidden" id="dark-theme">
                                 <label class="switch" for="dark-theme"></label>
                                 <span>Ночной режим</span>
                             </div>
                             <div class="lang">
-                                <span class="dropdown"><img src="img/langs/ru.png" alt="lang"> RU <i class="icon icon-chevron-down"></i></span>
+                                <span class="dropdown" tabindex="0"><img src="img/langs/ru.png" alt="lang"> RU <i class="icon icon-chevron-down"></i></span>
                                 <div class="dropdown-content">
                                     <ul>
                                         <li><a><img src="img/langs/ru.png" alt="lang"> EN</a></li>
@@ -42,7 +42,7 @@
                                 </div>
                             </div>
                             <div class="location-block">
-                                <span class="dropdown"><i class="icon icon-location"></i> Астана <i class="icon icon-chevron-down"></i></span>
+                                <span class="dropdown" tabindex="2"><i class="icon icon-location"></i> Астана <i class="icon icon-chevron-down"></i></span>
                                 <div class="dropdown-content location">
                                     <div class="region">
                                         <div class="form-group">
@@ -110,7 +110,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 col-xl-2 col-lg-3 col-md-4 root-col-2">
-                    <a href="/"><img src="img/logo.svg" alt="logo" title="logo" class="logo"></a>
+                    <a href="/"><img src="img/logo.svg" src-dark="img/logo-dark.svg" src-light="img/logo.svg" alt="logo" title="logo" class="logo" id="logo-header"></a>
                 </div>
                 <div class="col-12 col-xl-10 col-lg-9 col-md-8 root-col-10">
                     <div class="nav-content">
@@ -412,7 +412,7 @@
             </ul>
         </div>
         <h4 class="global-title big">Умная колонка Яндекс Станция 2 с Алисой черный антрацит</h4>
-        <div class="good-container">
+        <section class="good-container">
             <div class="good-container-header">
                 <div class="d-flex align-items-center">
                     <div class="rating">
@@ -469,6 +469,7 @@
                             </div>
                         </div>
                         <div class="good-item-swiper-pagination"></div>
+                        <span class="is-new">Новинка</span>
                     </div>
                 </div>
                 <div class="col-12 col-md-3">
@@ -487,7 +488,22 @@
                     </ul>
                     <a href="#!">Все характеристики</a>
                 </div>
-                <div class="col-12 col-md-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores doloremque earum enim, explicabo fuga fugit incidunt ipsam obcaecati officiis, quae quas quia quod rem reprehenderit suscipit ullam, vitae. Aliquam debitis eius impedit minus pariatur praesentium reprehenderit vel, veritatis. Beatae? </div>
+                <div class="col-12 col-md-3">
+                    <a href="#!" class="auth-discount">
+                        <img src="img/percent.png" alt="percent" title="скидка">
+                        <div class="desc">
+                            <p class="subtitle"><span>Авторизуйтесь,</span> <br>чтобы снизить цену</p>
+                        </div>
+                    </a>
+                    <div class="add-shop">
+                        <span><i class="icon icon-star"></i> Доставка завтра или позже</span>
+                        <p class="price current"><span class="number">109990</span> <span class="currency">₸</span></p>
+                        <p class="price with-courier">Курьером продавца - <span class="number">9500</span> <span class="currency">₸</span></p>
+                        <p class="dates">с 25 по 26 июня</p>
+                        <a href="#" class="btn btn-main btn-block">Купить</a>
+                        <p class="salesman">Продавец: <span>Alt-Del</span></p>
+                    </div>
+                </div>
             </div>
             <section class="section">
                 <h4 class="global-title mb-25"> Похожие товары </h4>
@@ -803,7 +819,362 @@
                     <div class="swiper-button-prev similar-products"></div>
                 </div>
             </section>
-        </div>
+            <div class="mt-75">
+                <ul class="tab-items good-item">
+                    <li class="tab-item active" target-wrapper="good-tab" target-tab="about">О товаре</li>
+                    <li class="tab-item" target-wrapper="good-tab" target-tab="characteristics">Храктеристики</li>
+                    <li class="tab-item" target-wrapper="good-tab" target-tab="price">Цены <span>6</span></li>
+                    <li class="tab-item" target-wrapper="good-tab" target-tab="reviews">Отзывы <span>299</span></li>
+                </ul>
+                <div class="tab-contents good-item mt-50" id="good-tab">
+                    <div class="tab-content active" id="about">
+                        <h2 class="mb-3">О товаре</h2>
+                        <div class="row">
+                            <div class="col-12 col-md-9">
+                                <div class="desc pe-3">
+                                    <p>«Умная» колонка с Алисой «Яндекс Станция 2» в цвете «антрацит» представляет собой современное акустическое устройство, удобное и простое в управлении. Голосовой помощник дает возможность быстро настраивать систему, следуя своим предпочтениям. <br><br> Колонка мощностью 30 Вт обеспечивает объемное звучание с глубокими басами и четкими верхними нотами. Она поддерживает Wi-Fi и Bluetooth, чтобы слушать музыку можно было с разных носителей - смартфона, планшета, ноутбука и т.д. <br><br> Имеется встроенный микрофон, поэтому можно говорить по громкой связи. У колонки компактные габариты и элегантный внешний облик, и она легко впишется в любой интерьер.</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-9">
+                                        <div class="images">
+                                            <img src="img/fake-good-item/image66.png" alt="good item" class="img-fluid mt-50 bra-20">
+                                            <img src="img/fake-good-item/image67.png" alt="good item" class="img-fluid mt-50 bra-20">
+                                            <img src="img/fake-good-item/image68.png" alt="good item" class="img-fluid mt-50 bra-20">
+                                            <img src="img/fake-good-item/image69.png" alt="good item" class="img-fluid mt-50 bra-20">
+                                            <img src="img/fake-good-item/image70.png" alt="good item" class="img-fluid mt-50 bra-20">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <h2 class="mb-3">Выгодные комплекты</h2>
+                                <div class="profitable-kits">
+                                    <div class="title">Выгодный комплект с Яндекс Станцией 2</div>
+                                    <div class="set">
+                                        <img src="img/fake-goods/image-85-5.png" alt="">
+                                        <div class="desc">
+                                            <p class="name">Умная колонка Яндекс Станция 2 с Алисой черный антрацит</p>
+                                            <p class="price"><span class="number">16999</span><span class="currency">₸</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="plus-static"></div>
+                                    <div class="set">
+                                        <img src="img/fake-goods/image-85-6.png" alt="">
+                                        <div class="desc">
+                                            <p class="name">Умная колонка Яндекс Станция 2 с Алисой черный asfasfsaf asf антрацит</p>
+                                            <p class="price"><span class="number">8999</span><span class="currency">₸</span></p>
+                                        </div>
+                                    </div>
+                                    <p class="benefit">Выгода <span class="price"><span class="number">5999</span> ₸</span></p>
+                                    <p class="price total"><span class="number">5999</span><span class="currency">₸</span></p>
+                                    <a href="#" class="btn btn-main btn-block">Купить комплект</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="characteristics">
+                        <h2 class="mb-3">Характеристики</h2>
+                        <ul class="characteristics">
+                            <li>Тип: <span>Умная колонка</span></li>
+                            <li>Мощность (Вт): <span>30</span></li>
+                            <li>Источник питания: <span>от электросети</span></li>
+                            <li>Количество динамиков: <span>2</span></li>
+                            <li>Тип акустической системы: <span>2.0</span></li>
+                            <li>Частотный диапозон (Гц): <span>65-20000</span></li>
+                            <li>Bluetooth: <span>Есть, 5.0</span></li>
+                            <li>Цвет: <span>Антрацит</span></li>
+                            <li>Материал корпуса: <span>Пластик</span></li>
+                            <li>Сабвуфер: <span>Нет</span></li>
+                            <li>Голосовой помощник: <span>Алиса</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="price">
+                        <h2 class="mb-3">Цены</h2>
+                        <ul class="tab-items price-tab">
+                            <li class="tab-item active" target-wrapper="price-tab" target-tab="any">Любая доставка</li>
+                            <li class="tab-item" target-wrapper="price-tab" target-tab="tomorrow">Завтра или позже</li>
+                            <li class="tab-item" target-wrapper="price-tab" target-tab="today">Забрать сегодня в магазине</li>
+                        </ul>
+                        <div class="tab-contents price-tab-content" id="price-tab">
+                            <div class="form-group mt-20 mb-0">
+                                <input type="checkbox" id="low" name="low" class="form-check">
+                                <label for="low">Сначала самая низкая цена</label>
+                            </div>
+                            <div class="tab-content active" id="any">
+                                <div class="price-list">
+                                    <div class="price-item">
+                                        <div class="salesman">
+                                            <p class="name">HOLODILNIK.RU (Север)</p>
+                                        </div>
+                                        <div class="delivery">
+                                            <p>Доставка, 26 июня — 1 ₸ <br> Пункты выдачи, 26 июня — 1 ₸</p>
+                                        </div>
+                                        <div class="price">
+                                            <div><span class="number">27499</span><span class="currency">₸</span></div>
+                                            <div class="credit">Кредит от 805 ₸ в мес</div>
+                                        </div>
+                                        <div class="action">
+                                            <a href="#" class="btn btn-main outline">В корзину</a>
+                                        </div>
+                                    </div>
+                                    <div class="price-item">
+                                        <div class="salesman">
+                                            <p class="name">Ситилинк</p>
+                                        </div>
+                                        <div class="delivery">
+                                            <p>Забрать в магазине, сегодня — 0 ₸</p>
+                                        </div>
+                                        <div class="price">
+                                            <div><span class="number">28800</span><span class="currency">₸</span></div>
+                                        </div>
+                                        <div class="action">
+                                            <a href="#" class="btn btn-main outline">Получить сегодня</a>
+                                        </div>
+                                    </div>
+                                    <div class="price-item">
+                                        <div class="salesman">
+                                            <p class="name">ТЕХНОПАРК</p>
+                                        </div>
+                                        <div class="delivery">
+                                            <p>Доставка курьером продавца, <br> 25 июня — 0 ₸</p>
+                                        </div>
+                                        <div class="price">
+                                            <div class="d-flex align-items-center"><span class="number">999999</span><span class="currency">₸</span> <span class="discount"><b>-19%</b></span></div>
+                                        </div>
+                                        <div class="action">
+                                            <a href="#" class="btn btn-main outline">В корзину</a>
+                                        </div>
+                                    </div>
+                                    <div class="price-item">
+                                        <div class="salesman">
+                                            <p class="name">Связной</p>
+                                        </div>
+                                        <div class="delivery">
+                                            <p>Забрать в магазине, сегодня — 0 ₸</p>
+                                        </div>
+                                        <div class="price">
+                                            <div><span class="number">29990</span><span class="currency">₸</span></div>
+                                            <div class="old-price">999999</div>
+                                        </div>
+                                        <div class="action">
+                                            <a href="#" class="btn btn-main outline">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content" id="tomorrow">
+                                <div class="price-list">
+                                    <div class="price-item">
+                                        <div class="salesman">
+                                            <p class="name">ТЕХНОПАРК</p>
+                                        </div>
+                                        <div class="delivery">
+                                            <p>Доставка курьером продавца, <br> 25 июня — 0 ₸</p>
+                                        </div>
+                                        <div class="price">
+                                            <div class="d-flex align-items-center"><span class="number">999999</span><span class="currency">₸</span> <span class="discount"><b>-19%</b></span></div>
+                                        </div>
+                                        <div class="action">
+                                            <a href="#" class="btn btn-main outline">В корзину</a>
+                                        </div>
+                                    </div>
+                                    <div class="price-item">
+                                        <div class="salesman">
+                                            <p class="name">Связной</p>
+                                        </div>
+                                        <div class="delivery">
+                                            <p>Забрать в магазине, сегодня — 0 ₸</p>
+                                        </div>
+                                        <div class="price">
+                                            <div><span class="number">29990</span><span class="currency">₸</span></div>
+                                            <div class="old-price">999999</div>
+                                        </div>
+                                        <div class="action">
+                                            <a href="#" class="btn btn-main outline">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content" id="today">
+                                <div class="price-list">
+                                    <div class="price-item">
+                                        <div class="salesman">
+                                            <p class="name">HOLODILNIK.RU (Север)</p>
+                                        </div>
+                                        <div class="delivery">
+                                            <p>Доставка, 26 июня — 1 ₸ <br> Пункты выдачи, 26 июня — 1 ₸</p>
+                                        </div>
+                                        <div class="price">
+                                            <div><span class="number">27499</span><span class="currency">₸</span></div>
+                                            <div class="credit">Кредит от 805 ₸ в мес</div>
+                                        </div>
+                                        <div class="action">
+                                            <a href="#" class="btn btn-main outline">В корзину</a>
+                                        </div>
+                                    </div>
+                                    <div class="price-item">
+                                        <div class="salesman">
+                                            <p class="name">Ситилинк</p>
+                                        </div>
+                                        <div class="delivery">
+                                            <p>Забрать в магазине, сегодня — 0 ₸</p>
+                                        </div>
+                                        <div class="price">
+                                            <div><span class="number">28800</span><span class="currency">₸</span></div>
+                                        </div>
+                                        <div class="action">
+                                            <a href="#" class="btn btn-main outline">Получить сегодня</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="reviews">
+                        <h2 class="mb-3">Отзывы</h2>
+                    </div>
+                </div>
+            </div>
+            <section class="section">
+                <h4 class="global-title mb-25"> Рекомендуем приобрести </h4>
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-20">
+                        <div class="shop-card">
+                            <div class="card-image">
+                                <img src="img/fake-goods/image-85.png" alt="photo" title="Стиральная машина Midea MFN60-S1003">
+                                <a href="#!" class="favorit">
+                                    <i class="icon icon-like"></i>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="info-content">
+                                    <a href="#!" class="title">Стиральная машина Midea MFN60-S1003</a>
+                                    <div class="stars-reviews">
+                                        <span class="stars"><i class="icon icon-star"></i> 4.9</span>
+                                        <span class="reviews"><i class="icon icon-chat"></i> 199 отзыва</span>
+                                    </div>
+                                </div>
+                                <div class="price-content">
+                                    <p class="price">
+                                        <span class="number">119990</span>
+                                        <span class="currency">₸</span>
+                                    </p>
+                                </div>
+                                <a href="#!" class="btn btn-main"><i class="icon icon-cart"></i> В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-20">
+                        <div class="shop-card">
+                            <div class="card-image">
+                                <img src="img/fake-goods/image-85-1.png" alt="photo" title="Робот-пылесос Xiaomi Lydsto S1 LDS">
+                                <a href="#!" class="favorit">
+                                    <i class="icon icon-like"></i>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="info-content">
+                                    <a href="#!" class="title">Робот-пылесос Xiaomi Lydsto S1 LDS</a>
+                                    <div class="stars-reviews">
+                                        <span class="stars"><i class="icon icon-star"></i> 4.4</span>
+                                        <span class="reviews"><i class="icon icon-chat"></i> 45 отзыва</span>
+                                    </div>
+                                </div>
+                                <div class="price-content">
+                                    <p class="price">
+                                        <span class="number">299990</span>
+                                        <span class="currency">₸</span>
+                                        <span class="old-price">329990</span>
+                                    </p>
+                                </div>
+                                <a href="#!" class="btn btn-main"><i class="icon icon-cart"></i> В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-20">
+                        <div class="shop-card">
+                            <div class="card-image">
+                                <img src="img/fake-goods/image-85-2.png" alt="photo" title="Беззеркальный фотоаппарат Canon EOS R6 RF 24-105 f/4-7.1 IS STM">
+                                <a href="#!" class="favorit">
+                                    <i class="icon icon-like"></i>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="info-content">
+                                    <a href="#!" class="title">Беззеркальный фотоаппарат Canon EOS R6 RF 24-105 f/4-7.1 IS STM</a>
+                                    <div class="stars-reviews">
+                                        <span class="stars"><i class="icon icon-star"></i> 5</span>
+                                        <span class="reviews"><i class="icon icon-chat"></i> 766 отзыва</span>
+                                    </div>
+                                </div>
+                                <div class="price-content">
+                                    <p class="price">
+                                        <span class="number">1499000</span>
+                                        <span class="currency">₸</span>
+                                    </p>
+                                </div>
+                                <a href="#!" class="btn btn-main"><i class="icon icon-cart"></i> В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-20">
+                        <div class="shop-card">
+                            <div class="card-image">
+                                <img src="img/fake-goods/image-85-3.png" alt="photo" title="Мешковой пылесос Vitek VT-1898">
+                                <a href="#!" class="favorit">
+                                    <i class="icon icon-like"></i>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="info-content">
+                                    <a href="#!" class="title">Мешковой пылесос Vitek VT-1898</a>
+                                    <div class="stars-reviews">
+                                        <span class="stars"><i class="icon icon-star"></i> 4</span>
+                                        <span class="reviews"><i class="icon icon-chat"></i> 12 отзыва</span>
+                                    </div>
+                                </div>
+                                <div class="price-content">
+                                    <p class="price">
+                                        <span class="number">45990</span>
+                                        <span class="currency">₸</span>
+                                        <span class="old-price">56890</span>
+                                    </p>
+                                </div>
+                                <a href="#!" class="btn btn-main"><i class="icon icon-cart"></i> В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-20">
+                        <div class="shop-card">
+                            <div class="card-image">
+                                <img src="img/fake-goods/image-85-4.png" alt="photo" title="Смартфон Xiaomi Redmi Note 10S 6+128GB Gray">
+                                <a href="#!" class="favorit">
+                                    <i class="icon icon-like-active"></i>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="info-content">
+                                    <a href="#!" class="title">Смартфон Xiaomi Redmi Note 10S 6+128GB Gray</a>
+                                    <div class="stars-reviews">
+                                        <span class="stars"><i class="icon icon-star"></i> 4.3</span>
+                                        <span class="reviews"><i class="icon icon-chat"></i> 233 отзыва</span>
+                                    </div>
+                                </div>
+                                <div class="price-content">
+                                    <p class="price">
+                                        <span class="number">19999</span>
+                                        <span class="currency">₸</span>
+                                        <span class="old-price">29990</span>
+                                    </p>
+                                </div>
+                                <a href="#!" class="btn btn-main"><i class="icon icon-cart"></i> В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
     </main>
     <footer class="footer">
         <div class="container">

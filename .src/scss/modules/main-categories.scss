@@ -12,6 +12,9 @@
       svg{
         margin-right: 10px;
       }
+      &:hover{
+        color: $mainColor;
+      }
     }
   }
 }

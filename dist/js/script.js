@@ -4773,11 +4773,16 @@
 	});
 	});
 
-	function swiperConstructor(element, pagination, navigation, slidesPerView, spaceBetween, sliderPerViewMobile) {
+	function swiperConstructor(element, pagination, navigation, slidesPerView, spaceBetween, sliderPerViewMobile, autoplay = 5000) {
 	  const elementReplace = element.replace('-swiper', '');
 	  const options = {};
 	  if (slidesPerView) {
 	    options.slidesPerView = slidesPerView;
+	  }
+	  if (autoplay) {
+	    options.autoplay = {
+	      delay: autoplay
+	    };
 	  }
 	  if (spaceBetween) {
 	    options.spaceBetween = spaceBetween;
@@ -4959,23 +4964,32 @@
 	numberPriceFormatter();
 
 	function themeSwitcher() {
-	  const darkThemeSwitch = document.getElementById('dark-theme');
+	  const darkThemeSwitch = document.querySelector('.dark-theme-switch');
+	  const darkThemeInput = document.querySelector('.dark-theme-switch input');
+	  const logoHeader = document.getElementById('logo-header');
+	  const logoHeaderDark = logoHeader.getAttribute('src-dark');
+	  const logoHeaderLight = logoHeader.getAttribute('src-light');
 	  darkThemeSwitch.addEventListener('click', function () {
-	    if (darkThemeSwitch.checked) {
+	    darkThemeInput.checked = !darkThemeInput.checked;
+	    if (darkThemeInput.checked) {
 	      document.body.classList.add('dark-theme');
 	      localStorage.setItem('theme', 'dark');
+	      logoHeader.src = logoHeaderDark;
 	    } else {
 	      document.body.classList.remove('dark-theme');
 	      localStorage.setItem('theme', 'light');
+	      logoHeader.src = logoHeaderLight;
 	    }
 	  });
 	  const getTheme = localStorage.getItem('theme');
 	  if (getTheme === 'dark') {
 	    document.body.classList.add('dark-theme');
-	    darkThemeSwitch.checked = true;
+	    darkThemeInput.checked = true;
+	    logoHeader.src = logoHeaderDark;
 	  } else {
 	    document.body.classList.remove('dark-theme');
-	    darkThemeSwitch.checked = false;
+	    darkThemeInput.checked = false;
+	    logoHeader.src = logoHeaderLight;
 	  }
 	}
 	themeSwitcher();
@@ -5010,8 +5024,7 @@
 	      el: ".good-item-swiper-pagination",
 	      clickable: true,
 	      dynamicBullets: true,
-	      dynamicMainBullets: 4,
-	      verticalClass: 'qwerty',
+	      dynamicMainBullets: 1,
 	      renderBullet: function (index, className) {
 	        return '<span class="' + className + '"><img src="' + images[index].src + '"></span>';
 	      }
@@ -5031,12 +5044,38 @@
 	}
 	badge();
 
-	swiperConstructor('banner-swiper', true, true, 1, 20);
-	// swiperConstructor('recommended-swiper', true, true, 4, 30);
-	swiperConstructor('similar-products-swiper', false, true, 5, 30);
-	swiperConstructor('mini-banner-swiper', true, false, 1, 30);
-	swiperConstructor('popular-categories-swiper', false, true, 5, 30);
-	swiperConstructor('actual-swiper', true, true, 5, 30);
-	swiperConstructor('latest-view-swiper', false, true, 4, 30, 1);
+	function tabs() {
+	  let tabSwitchers = document.querySelectorAll('[target-wrapper]');
+	  tabSwitchers.forEach(item => {
+	    item.addEventListener('click', e => {
+	      let currentWrapperId = item.getAttribute('target-wrapper');
+	      let currentWrapperTargetId = item.getAttribute('target-tab');
+	      let currentWrapper = document.querySelector(`#${currentWrapperId}`);
+	      let currentWrappersTarget = document.querySelector(`#${currentWrapperId} #${currentWrapperTargetId}`);
+	      let allCurrentTabItem = document.querySelectorAll(`[target-wrapper='${currentWrapperId}']`);
+	      let allCurrentWrappersTarget = document.querySelectorAll(`#${currentWrapperId} > .tab-content`);
+	      if (currentWrappersTarget) {
+	        if (!currentWrappersTarget.classList.contains('active')) {
+	          allCurrentWrappersTarget.forEach(tabItem => {
+	            tabItem.classList.remove('active');
+	          });
+	          allCurrentTabItem.forEach(item => {
+	            item.classList.remove('active');
+	          });
+	          item.classList.add('active');
+	          currentWrappersTarget.classList.add('active');
+	        }
+	      }
+	    });
+	  });
+	}
+	tabs();
+
+	swiperConstructor('banner-swiper', true, true, 1, 20, false, false);
+	swiperConstructor('similar-products-swiper', false, true, 5, 30, false, false);
+	swiperConstructor('mini-banner-swiper', true, false, 1, 30, false, 5000);
+	swiperConstructor('popular-categories-swiper', false, true, 5, 30, false, false);
+	swiperConstructor('actual-swiper', true, true, 5, 30, false, false);
+	swiperConstructor('latest-view-swiper', false, true, 4, 30, 1, false);
 
 })));

@@ -10,7 +10,10 @@
   padding: 0 17px;
   border-radius: 50px;
   transition: 0.15s all ease;
-
+&.btn-block{
+  width: 100%;
+  display: flex;
+}
   i {
     font-size: rem(16);
     margin-right: 6px;

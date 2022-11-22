@@ -11,8 +11,7 @@ function goodItemSwiper() {
             el: ".good-item-swiper-pagination",
             clickable: true,
             dynamicBullets: true,
-            dynamicMainBullets: 4,
-            verticalClass: 'qwerty',
+            dynamicMainBullets: 1,
             renderBullet: function (index, className) {
                 return '<span class="' + className + '"><img src="' + images[index].src + '"></span>';
             },

@@ -1,0 +1,61 @@
+.shopping-cart{
+  .card{
+    .card-body{
+      .icon-like, .icon-like-active{
+        font-size: rem(20);
+      }
+      .icon-like{
+        color: #D9D9D9;
+      }
+      .icon-like-active{
+        color: $mainColor;
+      }
+    }
+  }
+  .shopping-cart-item{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .content{
+      display: flex;
+      align-items: center;
+      max-width: 70%;
+      img{
+        width: 100px;
+        height: auto;
+      }
+      .desc{
+        margin-left: 30px;
+        .title{
+          font: rem(14);
+          span{
+            color: #8C959C;
+          }
+        }
+        .provider{
+          font-weight: 500;
+          font-size: rem(15);
+          text-transform: uppercase;
+          color: $mainColor;
+          margin: 4px 0 6px 0;
+        }
+        .delivery{
+          display: flex;
+          align-items: center;
+          color: #8C959C;
+          font-size: rem(12);
+          span{
+            display: inline-flex;
+            align-items: center;
+            line-height: 1;
+            margin-right: 12px;
+            i{
+              font-size: rem(16);
+              margin-right: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

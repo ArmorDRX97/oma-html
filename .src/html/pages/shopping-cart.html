@@ -1,0 +1,74 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<div class="breadcrumbs mb-30">
+    <ul class="breadcrumbs-list">
+        <li><a href="#!" class="breadcrumb">Главная</a></li>
+        <li><a href="#!" class="breadcrumb">Корзина</a></li>
+    </ul>
+</div>
+
+<section class="shopping-cart">
+    <div class="global-title big mb-20">
+        Корзина
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-9">
+            <div class="auth-discount">
+                <img src="img/percent.png" alt="percent" title="perecent">
+                <div class="desc">
+                    <p class="title">Войдите или зарегистрируйтесь</p>
+                    <p class="subtitle">Вы сможете накапливать бонусные тенге и использовать их при оплате до 50% стоимости товаров.</p>
+                    <a href="#" class="btn btn-main">Войти</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p class="global-title small">Товары в заказе</p>
+                        <a href="#"><i class="icon icon-like"></i></a>
+                    </div>
+                    <div class="shopping-cart-item mt-32">
+                        <div class="content">
+                            <img src="img/fake-goods/image-85-18.png" alt="">
+                            <div class="desc">
+                                <p class="title">Смарт-часы Apple Watch SE GPS, 44mm Space Grey with Midnight Sport Band, <span>0.2 кг</span></p>
+                                <p class="provider">технопарк</p>
+                                <p class="delivery">
+                                    <span><i class="icon icon-location"></i> Пункты выдачи: послезавтра</span>
+                                    <span><i class="icon icon-truck"></i> Доставка: послезавтра</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="count-and-price">
+                            <div class="price"><span class="number">28888</span><span class="currency">₸</span></div>
+                        </div>
+                    </div>
+                    <div class="shopping-cart-item mt-32">
+                        <div class="content">
+                            <img src="img/fake-goods/image-85-18.png" alt="">
+                            <div class="desc">
+                                <p class="title">Смарт-часы Apple Watch SE GPS, 44mm Space Grey with Midnight Sport Band, <span>0.2 кг</span></p>
+                                <p class="provider">технопарк</p>
+                                <p class="delivery">
+                                    <span><i class="icon icon-location"></i> Пункты выдачи: послезавтра</span>
+                                    <span><i class="icon icon-truck"></i> Доставка: послезавтра</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="count-and-price">
+                            <div class="price"><span class="number">28888</span><span class="currency">₸</span></div>
+                        </div>
+                    </div>
+                    <div class="divider in-card"></div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3">
+
+        </div>
+    </div>
+</section>
+{% endblock %}
