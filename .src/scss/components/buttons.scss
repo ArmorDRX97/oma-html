@@ -7,13 +7,22 @@
   font-size: rem(14);
   font-weight: 700;
   height: 38px;
+  border: none;
   padding: 0 17px;
   border-radius: 50px;
   transition: 0.15s all ease;
-&.btn-block{
-  width: 100%;
-  display: flex;
-}
+
+  &.btn-lg {
+    height: 48px;
+    font-size: rem(18);
+    font-weight: 500;
+  }
+
+  &.btn-block {
+    width: 100%;
+    display: flex;
+  }
+
   i {
     font-size: rem(16);
     margin-right: 6px;

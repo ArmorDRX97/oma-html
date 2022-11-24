@@ -119,11 +119,11 @@
         font-weight: 600;
         font-size: rem(20);
 
-        .currency {
-          color: $greyColor;
-          font-weight: 500 !important;
-          margin-left: 2px;
+      [data-formatter]{
+        span{
+          font-weight: 500;
         }
+      }
 
         .old-price {
           margin-left: 10px;

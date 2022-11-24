@@ -1,3 +1,13 @@
+.form-group{
+  position: relative;
+  margin-bottom: 25px;
+  label{
+    font-size: rem(14);
+    color: #8C959C;
+    margin-bottom: 4px;
+  }
+}
+
 .form-control{
   display: block;
   width: 100%;
@@ -22,6 +32,16 @@
   }
   &:focus-visible{
     outline: none!important;
+  }
+}
+
+textarea.form-control{
+  padding: 16px 12px;
+  min-width: 100%;
+  max-width: 100%;
+  &:not(.resizable){
+    overflow: hidden;
+    resize: none;
   }
 }
 

@@ -63,7 +63,6 @@ function swiperConstructor(element, pagination, navigation, slidesPerView, space
             };
             break;
         default:
-            console.log('default');
     }
 
     if(sliderPerViewMobile){

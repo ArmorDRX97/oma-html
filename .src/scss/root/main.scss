@@ -490,9 +490,10 @@ main {
 
 }
 
-.form-group {
-  margin-bottom: 10px;
-  position: relative;
+[data-formatter]{
+  span{
+    color: #8C959C;
+  }
 }
 
 .form-check {

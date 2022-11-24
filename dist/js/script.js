@@ -4834,8 +4834,6 @@
 	        slidesPerView: 2
 	      };
 	      break;
-	    default:
-	      console.log('default');
 	  }
 	  if (sliderPerViewMobile) {
 	    options.breakpoints["320"] = {
@@ -4948,17 +4946,28 @@
 	}
 	catalogMenu$1();
 
+	function replacePrice(element, color) {
+	  const string = element.innerText;
+	  const number = parseInt(string.match(/(\d+)/)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+	  const currency = string.slice(-1);
+	  if (isNaN(parseInt(currency))) {
+	    if (color) {
+	      element.innerHTML = `${number} <span style="color: ${color}">${currency}</span>`;
+	    } else {
+	      element.innerHTML = `${number} <span>${currency}</span>`;
+	    }
+	  }
+	  if (!isNaN(parseInt(currency))) {
+	    element.innerHTML = number;
+	  }
+	}
 	function numberPriceFormatter() {
-	  const curPriceNum = document.querySelectorAll('.price .number');
-	  const oldPriceNum = document.querySelectorAll('.price .old-price');
-	  function numberWithSpaces(nr) {
-	    return nr.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-	  }
-	  for (let i = 0; i < curPriceNum.length; i++) {
-	    curPriceNum[i].innerHTML = numberWithSpaces(curPriceNum[i].innerText);
-	  }
-	  for (let i = 0; i < oldPriceNum.length; i++) {
-	    oldPriceNum[i].innerHTML = numberWithSpaces(oldPriceNum[i].innerText);
+	  const elements = document.querySelectorAll('[data-formatter]');
+	  if (elements) {
+	    elements.forEach(item => {
+	      const color = item.getAttribute('data-color');
+	      replacePrice(item, color);
+	    });
 	  }
 	}
 	numberPriceFormatter();
@@ -5070,6 +5079,34 @@
 	  });
 	}
 	tabs();
+
+	function amountCalc() {
+	  const amountBlock = document.querySelectorAll('.amount-calc');
+	  amountBlock.forEach(item => {
+	    let input = item.children[1];
+	    let minus = item.children[0];
+	    let plus = item.children[2];
+	    let inputNumber = parseInt(input.value);
+	    if (!inputNumber || inputNumber < 1) {
+	      input.value = 1;
+	    }
+	    input.addEventListener('focusout', e => {
+	      let number = parseInt(e.target.value);
+	      if (!number || number < 1) {
+	        e.target.value = 1;
+	      }
+	    });
+	    minus.addEventListener('click', () => {
+	      if (input.value > 1) {
+	        input.value--;
+	      }
+	    });
+	    plus.addEventListener('click', () => {
+	      input.value++;
+	    });
+	  });
+	}
+	amountCalc();
 
 	swiperConstructor('banner-swiper', true, true, 1, 20, false, false);
 	swiperConstructor('similar-products-swiper', false, true, 5, 30, false, false);

@@ -9,10 +9,11 @@ import './components/grid-list-switcher';
 import './components/good-item-swiper';
 import './components/badge';
 import './components/tabs';
+import './components/amount-calc';
 
-swiperConstructor('banner-swiper', true, true, 1 ,20, false, false);
+swiperConstructor('banner-swiper', true, true, 1, 20, false, false);
 swiperConstructor('similar-products-swiper', false, true, 5, 30, false, false);
-swiperConstructor('mini-banner-swiper', true, false, 1,30, false, 5000);
+swiperConstructor('mini-banner-swiper', true, false, 1, 30, false, 5000);
 swiperConstructor('popular-categories-swiper', false, true, 5, 30, false, false);
 swiperConstructor('actual-swiper', true, true, 5, 30, false, false);
 swiperConstructor('latest-view-swiper', false, true, 4, 30, 1, false);

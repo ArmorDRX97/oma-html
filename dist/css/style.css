@@ -1638,11 +1638,18 @@ Generated using nucleoapp.com
   font-size: 0.875rem;
   font-weight: 700;
   height: 38px;
+  border: none;
   padding: 0 17px;
   border-radius: 50px;
   -webkit-transition: 0.15s all ease;
   -o-transition: 0.15s all ease;
   transition: 0.15s all ease;
+}
+
+.btn.btn-lg {
+  height: 48px;
+  font-size: 1.125rem;
+  font-weight: 500;
 }
 
 .btn.btn-block {
@@ -1664,6 +1671,17 @@ Generated using nucleoapp.com
 
 .btn.btn-main:hover {
   background-color: #e89c02;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  color: #8C959C;
+  margin-bottom: 4px;
 }
 
 .form-control {
@@ -1715,6 +1733,17 @@ Generated using nucleoapp.com
 
 .form-control:focus-visible {
   outline: none !important;
+}
+
+textarea.form-control {
+  padding: 16px 12px;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+textarea.form-control:not(.resizable) {
+  overflow: hidden;
+  resize: none;
 }
 
 .dark-theme .form-control {
@@ -1849,6 +1878,81 @@ Generated using nucleoapp.com
   background-color: #D9D9D9;
   margin: 32px 0 32px -32px;
   width: calc(100% + 64px);
+}
+
+.amount-calc {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90px;
+  height: 36px;
+  border: 1px solid #D9D9D9;
+  border-radius: 8px;
+}
+
+.amount-calc .plus,
+.amount-calc .minus {
+  width: 30px;
+  height: 34px;
+  font-size: 1.25rem;
+  color: #8C959C;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none;
+  /* Standard syntax */
+}
+
+.amount-calc .plus:hover,
+.amount-calc .minus:hover {
+  color: #FFAB02;
+}
+
+.amount-calc input {
+  padding: 0;
+  width: 30px;
+  border: none;
+  height: 34px;
+  text-align: center;
+  color: #494F54;
+  font-weight: 500;
+}
+
+.amount-calc input:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+.amount-calc input:focus-visible {
+  outline: none !important;
+}
+
+.amount-calc input::-webkit-outer-spin-button,
+.amount-calc input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.amount-calc input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .dark-theme .pre-header {
@@ -2899,10 +3003,8 @@ Generated using nucleoapp.com
   font-size: 1.25rem;
 }
 
-.shop-card .card-body .price-content .price .currency {
-  color: #8C959C;
-  font-weight: 500 !important;
-  margin-left: 2px;
+.shop-card .card-body .price-content .price [data-formatter] span {
+  font-weight: 500;
 }
 
 .shop-card .card-body .price-content .price .old-price {
@@ -3672,6 +3774,129 @@ Generated using nucleoapp.com
   margin-right: 6px;
 }
 
+.shopping-cart .shopping-cart-item .count-and-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shopping-cart .shopping-cart-item .count-and-price .amount-calc {
+  margin-right: 35px;
+}
+
+.shopping-cart .shopping-cart-item .count-and-price .price {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.shopping-cart .shopping-cart-item .count-and-price .price .currency {
+  color: #8C959C;
+  margin-left: 5px;
+}
+
+.shopping-cart .promo-code {
+  position: relative;
+  margin: 0;
+}
+
+.shopping-cart .promo-code .form-control {
+  padding: 0 135px 0 12px;
+}
+
+.shopping-cart .promo-code .form-control::-webkit-input-placeholder {
+  color: #D9D9D9;
+}
+
+.shopping-cart .promo-code .form-control::-moz-placeholder {
+  color: #D9D9D9;
+}
+
+.shopping-cart .promo-code .form-control:-ms-input-placeholder {
+  color: #D9D9D9;
+}
+
+.shopping-cart .promo-code .form-control::-ms-input-placeholder {
+  color: #D9D9D9;
+}
+
+.shopping-cart .promo-code .form-control::placeholder {
+  color: #D9D9D9;
+}
+
+.shopping-cart .promo-code .btn-promo-code {
+  background-color: transparent;
+  border: none;
+  padding: 0 20px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  height: 38px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #FFAB02;
+}
+
+.shopping-cart .promo-code .btn-promo-code:hover {
+  color: #f0a102;
+}
+
+.shopping-cart .switch-radio {
+  cursor: pointer;
+}
+
+.shopping-cart .switch-radio .content {
+  border: 1px solid #D9D9D9;
+  border-radius: 20px;
+  padding: 20px 56px;
+  position: relative;
+}
+
+.shopping-cart .switch-radio .content:before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #D9D9D9;
+  z-index: 2;
+}
+
+.shopping-cart .switch-radio .content .title {
+  font-size: 1.125rem;
+  margin-bottom: 5px;
+  line-height: 1;
+}
+
+.shopping-cart .switch-radio .content .subtitle {
+  font-size: 0.875rem;
+  color: #494F54;
+}
+
+.shopping-cart .switch-radio .content .subtitle span {
+  color: #1D2023;
+  font-weight: 500;
+}
+
+.shopping-cart .switch-radio input:checked + .content {
+  border: 1px solid #FFAB02;
+}
+
+.shopping-cart .switch-radio input:checked + .content:before {
+  border: 4px solid #FFAB02;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -4133,9 +4358,8 @@ main {
   color: #D9D9D9;
 }
 
-.form-group {
-  margin-bottom: 10px;
-  position: relative;
+[data-formatter] span {
+  color: #8C959C;
 }
 
 .form-check {
@@ -4427,6 +4651,18 @@ main {
   height: auto;
 }
 
+.text-orange {
+  color: #FFAB02;
+}
+
+.lightgray-text {
+  color: #8C959C;
+}
+
+.gray-text {
+  color: #494F54;
+}
+
 .regular {
   font-weight: 400 !important;
 }
@@ -4441,6 +4677,14 @@ main {
 
 .bold {
   font-weight: 700 !important;
+}
+
+.fz-14 {
+  font-size: 0.875rem;
+}
+
+.fz-18 {
+  font-size: 1.125rem;
 }
 
 .text-center {
@@ -4483,6 +4727,14 @@ main {
   margin-bottom: 30px;
 }
 
+.hide {
+  display: none;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
 .mb-40 {
   margin-bottom: 40px;
 }
@@ -4493,6 +4745,10 @@ main {
 
 .mt-20 {
   margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
 }
 
 .mt-32 {

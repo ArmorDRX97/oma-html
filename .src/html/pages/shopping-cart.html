@@ -12,6 +12,9 @@
     <div class="global-title big mb-20">
         Корзина
     </div>
+    <hr>
+    <div class="test"><span data-formatter>28888₸</span></div>
+    <hr>
     <div class="row">
         <div class="col-12 col-md-9">
             <div class="auth-discount">
@@ -22,7 +25,7 @@
                     <a href="#" class="btn btn-main">Войти</a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card mt-30">
                 <div class="card-body">
                     <div class="d-flex align-items-center justify-content-between">
                         <p class="global-title small">Товары в заказе</p>
@@ -41,7 +44,12 @@
                             </div>
                         </div>
                         <div class="count-and-price">
-                            <div class="price"><span class="number">28888</span><span class="currency">₸</span></div>
+                            <div class="amount-calc">
+                                <span class="plus">-</span>
+                                <input type="number" value="1">
+                                <span class="plus">+</span>
+                            </div>
+                            <div class="price"><span class="number">28888</span>₸</div>
                         </div>
                     </div>
                     <div class="shopping-cart-item mt-32">
@@ -57,14 +65,128 @@
                             </div>
                         </div>
                         <div class="count-and-price">
+                            <div class="amount-calc">
+                                <span class="plus">-</span>
+                                <input type="number" value="1">
+                                <span class="plus">+</span>
+                            </div>
                             <div class="price"><span class="number">28888</span><span class="currency">₸</span></div>
                         </div>
                     </div>
                     <div class="divider in-card"></div>
-
-
+                    <div class="row">
+                        <div class="col-12 col-md-5">
+                            <p class="medium mb-20">Использовать промокод</p>
+                            <div class="form-group promo-code">
+                                <input type="text" class="form-control form-control-sm" placeholder="Введите промокод">
+                                <button class="btn-promo-code">Применить</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-5 offset-md-2 text-right">
+                            <p class="medium mb-20">Использовать бонусные рубли</p>
+                            <p class="fz-14 gray-text">Чтобы использовать бонусные тенге, <br>
+                                <span class="text-orange">войдите</span></p>
+                            <p class="price">Итого: <span class="number">28888</span><span class="currency">₸</span></p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="card mt-30">
+                <div class="card-body">
+                        <p class="global-title small mb-30">Товары в заказе</p>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <label class="switch-radio">
+                                <input type="radio" name="delivery" class="hide" checked>
+                                <div class="content">
+                                    <p class="title">Пункт выдачи</p>
+                                    <p class="subtitle">С 4 июля, <span>от 1 ₸</span></p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label class="switch-radio">
+                                <input type="radio" name="delivery" class="hide">
+                                <div class="content">
+                                    <p class="title">Доставка курьером</p>
+                                    <p class="subtitle">С 4 июля, <span>от 1 ₸</span></p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <p class="global-title small mt-50 mb-30">Адрес доставки</p>
+                    <div class="form-group">
+                        <label for="address">Город, улица, номер дома</label>
+                        <input type="text" id="address" name="address" class="form-control" placeholder="Введите адрес">
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-9">
+                            <div class="row">
+                                <div class="col-12 col-lg-3 col-md-6">
+                                    <div class="form-group">
+                                        <label for="office">Кв./офис</label>
+                                        <input type="text" id="office" name="office" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3 col-md-6">
+                                    <div class="form-group">
+                                        <label for="floor">Этаж</label>
+                                        <input type="text" id="floor" name="floor" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3 col-md-6">
+                                    <div class="form-group">
+                                        <label for="entrance">Подъезд</label>
+                                        <input type="text" id="entrance" name="entrance" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3 col-md-6">
+                                    <div class="form-group">
+                                        <label for="intercom">Домофон</label>
+                                        <input type="text" id="intercom" name="intercom" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <!-- добавить класс resizable для возможности изменять размер  -->
+                                <textarea cols="10" id="comment" name="comment" class="form-control" placeholder="Комментарий курьеру" style="height: 180px;"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-lg-9">
+                            <p class="global-title small mt-50 mb-30">Получатель</p>
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Имя *">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="surname" name="surname" class="form-control" placeholder="Фамилия *">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="phone" name="phone" class="form-control" placeholder="Номер телефона *">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" class="form-control" placeholder="E-mail *">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-30">
+                <div class="card-body">
+                    <p class="global-title small mb-15">Условия доставки</p>
+                    <p class="fz-18 gray-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores atque ea iusto libero nostrum odit similique, ullam velit voluptatum!</p>
+                </div>
+            </div>
+            <div class="card mt-30">
+                <div class="card-body">
+                    <p class="global-title small mb-15">Способ оплаты</p>
+                    <p class="fz-18 gray-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores atque ea iusto libero nostrum odit similique, ullam velit voluptatum!</p>
+                </div>
+            </div>
+            <button class="btn btn-lg btn-main btn-block mt-30">оформить заказ</button>
         </div>
         <div class="col-12 col-md-3">
 

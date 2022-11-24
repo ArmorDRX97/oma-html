@@ -32,10 +32,9 @@
                 <span class="discount"><b>{{item.discount}}%</b></span>
                 {% endif %}
                 <p class="price">
-                    <span class="number">{{item.price}}</span>
-                    <span class="currency">₸</span>
+                    <span data-formatter>{{item.price}}₸</span>
                     {% if item.oldPrice %}
-                    <span class="old-price">{{item.oldPrice}}</span>
+                    <span class="old-price" data-formatter>{{item.oldPrice}}</span>
                     {% endif %}
                 </p>
             </div>
